@@ -2557,7 +2557,103 @@ const textoFinal = texto.includes('18 horas') ? texto : `${texto}\n\n${aviso18h}
       if (!url) { toast('⚠️ Cadastre o número de WhatsApp do paciente antes de confirmar.'); return; }
       window.open(url, '_blank', 'noopener,noreferrer');
     }
+(function ativarSalvamentoEAutobackupContinuo() {
+  const CHAVE_AUTOBACKUP = 'ana_sena_psicologia_autobackup_v1';
+  let backupPendente = false;
 
+  function obterSnapshotDados() {
+    try {
+      if (typeof db !== 'undefined') {
+        return {
+          salvoEm: new Date().toISOString(),
+          dados: db
+        };
+      }
+      const backupBruto = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k !== CHAVE_AUTOBACKUP) {
+          backupBruto[k] = localStorage.getItem(k);
+        }
+      }
+      return {
+        salvoEm: new Date().toISOString(),
+        dados: backupBruto
+      };
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function gravarSnapshotLocal() {
+    const snap = obterSnapshotDados();
+    if (!snap) return;
+    try {
+      localStorage.setItem(CHAVE_AUTOBACKUP, JSON.stringify(snap));
+      backupPendente = true;
+      const badge = document.getElementById('status-rede-badge');
+      if (badge && navigator.onLine) {
+        const hora = new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+        badge.title = 'Último salvamento automático: ' + hora;
+      }
+    } catch (e) {
+      // Evita travar o app se o limite de armazenamento for atingido
+    }
+  }
+
+  window.baixarBackupJsonAgora = function () {
+    const snap = obterSnapshotDados();
+    if (!snap) return;
+    const blob = new Blob([JSON.stringify(snap.dados, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    const dataStr = new Date().toISOString().slice(0, 10);
+    const horaStr = new Date().toTimeString().slice(0, 5).replace(':', '-');
+    a.href = url;
+    a.download = `backup-ana-sena-psicologia-${dataStr}-${horaStr}.json`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+    backupPendente = false;
+  };
+
+  // Envolve a função salvar() existente, se houver, para gravar o snapshot a cada ação
+  if (typeof window.salvar === 'function' && !window.salvar.__envoltaAutobackup) {
+    const salvarOriginal = window.salvar;
+    window.salvar = function (...args) {
+      const resultado = salvarOriginal.apply(this, args);
+      gravarSnapshotLocal();
+      return resultado;
+    };
+    window.salvar.__envoltaAutobackup = true;
+  }
+
+  // Salva automaticamente a cada 45 segundos enquanto estiver online e com alterações
+  setInterval(() => {
+    if (navigator.onLine && backupPendente) {
+      gravarSnapshotLocal();
+    }
+  }, 45000);
+
+  // Marca alteração ao digitar, anexar arquivo ou mudar campos
+  document.addEventListener('input', () => { backupPendente = true; }, true);
+  document.addEventListener('change', () => { backupPendente = true; }, true);
+
+  // Tenta salvar snapshot imediatamente ao trocar de aba ou sair
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'hidden') {
+      gravarSnapshotLocal();
+    }
+  });
+
+  window.addEventListener('beforeunload', () => {
+    gravarSnapshotLocal();
+  });
+
+  // Garante um primeiro snapshot ao carregar o app
+  gravarSnapshotLocal();
+})();
     function abrirModal(html) { document.getElementById('app-modal-box').innerHTML = html; document.getElementById('app-modal').classList.remove('hidden'); }
     function fecharModal() { document.getElementById('app-modal').classList.add('hidden'); }
 
