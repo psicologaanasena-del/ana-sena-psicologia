@@ -2548,8 +2548,8 @@
         nome: appt.nome,
         dataFmt,
         hora: appt.hora,
-        profissional: 'Dra. Ana Paula Dias Sena',
-        servico: pac?.servicoNome || appt.mod || 'Atendimento'
+        profissional: 'Dra. Ana Paula',
+        pac?.servicoNome || appt.mod || 'Atendimento'
       });
       const aviso18h = 'Por gentileza, confirme sua consulta com pelo menos 18 horas de antecedência.';
 const textoFinal = texto.includes('18 horas') ? texto : `${texto}\n\n${aviso18h}`;
