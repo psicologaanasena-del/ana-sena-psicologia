@@ -1,327 +1,2603 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psicóloga em Nova Iguaçu e São João de Meriti | Ana Sena Psicologia</title>
-  <meta name="description" content="Atendimento psicológico com Ana Sena, psicóloga CRP 05/61450, em Nova Iguaçu e São João de Meriti, presencial e online. Terapia para ansiedade, autoestima e relacionamentos, baseada na TCC.">
-  <link rel="canonical" href="https://www.anasenapsicologia.com.br/">
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Psicóloga em Nova Iguaçu e São João de Meriti | Ana Sena Psicologia">
-  <meta property="og:description" content="Atendimento psicológico com escuta qualificada, ética profissional e respeito à singularidade de cada pessoa. Presencial e online.">
-  <meta property="og:url" content="https://www.anasenapsicologia.com.br/">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:image" content="https://www.anasenapsicologia.com.br/images/og-capa.jpg">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180.png">
-
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1VXFHLJFRT"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-1VXFHLJFRT');
-  </script>
-
-  <!-- Schema: Psicóloga como LocalBusiness/Person -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Psychologist",
-    "name": "Ana Sena",
-    "alternateName": "Ana Sena Psicologia",
-    "image": "https://www.anasenapsicologia.com.br/images/og-capa.jpg",
-    "url": "https://www.anasenapsicologia.com.br/",
-    "telephone": "+5521978845463",
-    "email": "psicologaanasena@gmail.com",
-    "areaServed": [
-      { "@type": "City", "name": "Nova Iguaçu" },
-      { "@type": "City", "name": "São João de Meriti" }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Nova Iguaçu",
-      "addressRegion": "RJ",
-      "addressCountry": "BR"
-    },
-    "identifier": {
-      "@type": "PropertyValue",
-      "name": "CRP",
-      "value": "05/61450"
-    },
-    "sameAs": [
-      "https://www.instagram.com/anasenapsi"
-    ],
-    "availableService": {
-      "@type": "MedicalTherapy",
-      "name": "Psicoterapia individual"
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#3D5A52" />
+  <title>Ana Sena Psicologia | App Clínico Profissional</title>
+  <style>
+    :root {
+      --alabaster-50: #FBF9F5;
+      --alabaster-100: #F3EDE3;
+      --alabaster-200: #E7DFD2;
+      --alabaster-300: #D8CCB8;
+      --sage-50: #F1F5F4;
+      --sage-100: #DCE6E3;
+      --sage-200: #B9CEC8;
+      --sage-600: #3D5A52;
+      --sage-700: #2D443E;
+      --champagne-50: #FBF8F0;
+      --champagne-100: #F5EEDB;
+      --champagne-200: #E6D4B1;
+      --champagne-500: #C5A059;
+      --champagne-600: #A3803E;
+      --champagne-700: #7E612B;
+      --ink-700: #3A342F;
+      --ink-800: #24201D;
+      --ink-900: #161412;
+      --stone-400: #A8A29E;
+      --stone-500: #78716C;
+      --stone-600: #57534E;
+      --stone-700: #44403C;
+      --emerald-50: #ECFDF5;
+      --emerald-100: #D1FAE5;
+      --emerald-200: #A7F3D0;
+      --emerald-600: #059669;
+      --emerald-700: #047857;
+      --emerald-800: #065F46;
+      --emerald-900: #064E3B;
+      --rose-50: #FFF1F2;
+      --rose-100: #FFE4E6;
+      --rose-500: #F43F5E;
+      --rose-600: #E11D48;
+      --rose-700: #BE123C;
+      --rose-800: #9F1239;
+      --amber-100: #FEF3C7;
+      --amber-700: #B45309;
+      --amber-800: #92400E;
+      --shadow-card: 0 10px 30px -10px rgba(61, 90, 82, 0.08);
     }
-  }
-  </script>
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--alabaster-50);
+      color: var(--ink-800);
+      touch-action: manipulation;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 6.5rem;
+    }
+
+    body ::selection { background-color: var(--champagne-200); }
+
+    .font-serif { font-family: Georgia, "Times New Roman", serif; }
+    .hidden { display: none !important; }
+    .blurred { filter: blur(6px); transition: filter 0.2s; }
+    .cursor-pointer { cursor: pointer; }
+    .shrink-0 { flex-shrink: 0; }
+    .capitalize { text-transform: capitalize; }
+    .uppercase { text-transform: uppercase; }
+    .tracking-wide { letter-spacing: 0.04em; }
+
+    .fixed { position: fixed; }
+    .sticky { position: sticky; }
+    .inset-0 { top: 0; right: 0; bottom: 0; left: 0; }
+    .inset-x-0 { left: 0; right: 0; }
+    .top-0 { top: 0; }
+    .bottom-0 { bottom: 0; }
+    .bottom-24 { bottom: 6rem; }
+    .right-4 { right: 1rem; }
+    .z-30 { z-index: 30; }
+    .z-40 { z-index: 40; }
+    .z-50 { z-index: 50; }
+
+    .flex { display: flex; }
+    .flex-col { flex-direction: column; }
+    .flex-wrap { flex-wrap: wrap; }
+    .flex-grow { flex-grow: 1; }
+    .flex-1 { flex: 1 1 0%; }
+    .items-center { align-items: center; }
+    .items-start { align-items: flex-start; }
+    .justify-center { justify-content: center; }
+    .justify-between { justify-content: space-between; }
+    .justify-end { justify-content: flex-end; }
+
+    .grid { display: grid; }
+    .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+    .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+
+    @media (min-width: 640px) {
+      .sm\:p-6 { padding: 1.5rem; }
+      .sm\:p-8 { padding: 2rem; }
+      .sm\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .sm\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .sm\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+      .sm\:text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+    }
+
+    .gap-1\.5 { gap: 0.375rem; }
+    .gap-2 { gap: 0.5rem; }
+    .gap-2\.5 { gap: 0.625rem; }
+    .gap-3 { gap: 0.75rem; }
+    .gap-4 { gap: 1rem; }
+    .space-x-2 > * + * { margin-left: 0.5rem; }
+    .space-x-3 > * + * { margin-left: 0.75rem; }
+    .space-y-1 > * + * { margin-top: 0.25rem; }
+    .space-y-1\.5 > * + * { margin-top: 0.375rem; }
+    .space-y-2 > * + * { margin-top: 0.5rem; }
+    .space-y-2\.5 > * + * { margin-top: 0.625rem; }
+    .space-y-3 > * + * { margin-top: 0.75rem; }
+    .space-y-3\.5 > * + * { margin-top: 0.875rem; }
+    .space-y-4 > * + * { margin-top: 1rem; }
+    .space-y-5 > * + * { margin-top: 1.25rem; }
+
+    .w-full { width: 100%; }
+    .w-12 { width: 3rem; }
+    .w-14 { width: 3.5rem; }
+    .w-28 { width: 7rem; }
+    .w-14-fixed { width: 3.5rem; }
+    .w-3 { width: 0.75rem; }
+    .h-3 { height: 0.75rem; }
+    .h-12 { height: 3rem; }
+    .h-14 { height: 3.5rem; }
+    .h-28 { height: 7rem; }
+    .h-auto { height: auto; }
+    .max-w-md { max-width: 28rem; }
+    .max-w-2xl { max-width: 42rem; }
+    .max-w-4xl { max-width: 56rem; }
+    .min-w-graf { min-width: 480px; }
+    .max-h-90vh { max-height: 90vh; }
+    .max-h-70vh { max-height: 70vh; }
+
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .my-auto { margin-top: auto; margin-bottom: auto; }
+    .m-0 { margin: 0; }
+    .mt-0\.5 { margin-top: 0.125rem; }
+    .mt-1 { margin-top: 0.25rem; }
+    .mt-1\.5 { margin-top: 0.375rem; }
+    .mt-2 { margin-top: 0.5rem; }
+    .mb-1 { margin-bottom: 0.25rem; }
+    .mb-2 { margin-bottom: 0.5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .pt-1 { padding-top: 0.25rem; }
+    .pt-2 { padding-top: 0.5rem; }
+    .pt-3 { padding-top: 0.75rem; }
+    .pt-4 { padding-top: 1rem; }
+    .pt-8 { padding-top: 2rem; }
+    .pb-1 { padding-bottom: 0.25rem; }
+    .pb-2 { padding-bottom: 0.5rem; }
+    .pb-3 { padding-bottom: 0.75rem; }
+    .pb-4 { padding-bottom: 1rem; }
+    .px-2 { padding-left: 0.5rem; padding-right: 0.5rem; }
+    .px-2\.5 { padding-left: 0.625rem; padding-right: 0.625rem; }
+    .px-3 { padding-left: 0.75rem; padding-right: 0.75rem; }
+    .px-3\.5 { padding-left: 0.875rem; padding-right: 0.875rem; }
+    .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .py-0\.5 { padding-top: 0.125rem; padding-bottom: 0.125rem; }
+    .py-1 { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+    .py-1\.5 { padding-top: 0.375rem; padding-bottom: 0.375rem; }
+    .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+    .py-2\.5 { padding-top: 0.625rem; padding-bottom: 0.625rem; }
+    .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    .py-3\.5 { padding-top: 0.875rem; padding-bottom: 0.875rem; }
+    .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+    .p-1 { padding: 0.25rem; }
+    .p-1\.5 { padding: 0.375rem; }
+    .p-2 { padding: 0.5rem; }
+    .p-2\.5 { padding: 0.625rem; }
+    .p-3 { padding: 0.75rem; }
+    .p-3\.5 { padding: 0.875rem; }
+    .p-4 { padding: 1rem; }
+    .p-5 { padding: 1.25rem; }
+    .p-6 { padding: 1.5rem; }
+    .p-8 { padding: 2rem; }
+    .pl-4 { padding-left: 1rem; }
+
+    .overflow-hidden { overflow: hidden; }
+    .overflow-x-auto { overflow-x: auto; }
+    .overflow-y-auto { overflow-y: auto; }
+    .pointer-events-none { pointer-events: none; }
+
+    .rounded-xs { border-radius: 0.125rem; }
+    .rounded-lg { border-radius: 0.5rem; }
+    .rounded-xl { border-radius: 0.75rem; }
+    .rounded-2xl { border-radius: 1rem; }
+    .rounded-3xl { border-radius: 1.5rem; }
+    .rounded-full { border-radius: 9999px; }
+
+    .border { border: 1px solid var(--alabaster-200); }
+    .border-2 { border: 2px solid var(--champagne-500); }
+    .border-t { border-top: 1px solid var(--alabaster-200); }
+    .border-b { border-bottom: 1px solid var(--alabaster-200); }
+    .border-b-2 { border-bottom: 2px solid var(--champagne-500); }
+    .border-alabaster-100 { border-color: var(--alabaster-100); }
+    .border-alabaster-200 { border-color: var(--alabaster-200); }
+    .border-alabaster-300 { border-color: var(--alabaster-300); }
+    .border-champagne-200 { border-color: var(--champagne-200); }
+    .border-sage-200 { border-color: var(--sage-200); }
+    .border-emerald-200 { border-color: var(--emerald-200); }
+
+    .bg-white { background-color: #FFFFFF; }
+    .bg-alabaster-50 { background-color: var(--alabaster-50); }
+    .bg-alabaster-50-soft { background-color: rgba(251, 249, 245, 0.55); }
+    .bg-alabaster-100 { background-color: var(--alabaster-100); }
+    .bg-sage-50 { background-color: var(--sage-50); }
+    .bg-sage-100 { background-color: var(--sage-100); }
+    .bg-sage-600 { background-color: var(--sage-600); }
+    .bg-sage-700 { background-color: var(--sage-700); }
+    .bg-champagne-50 { background-color: var(--champagne-50); }
+    .bg-champagne-500 { background-color: var(--champagne-500); }
+    .bg-emerald-50 { background-color: var(--emerald-50); }
+    .bg-emerald-100 { background-color: var(--emerald-100); }
+    .bg-emerald-600 { background-color: var(--emerald-600); }
+    .bg-rose-50 { background-color: var(--rose-50); }
+    .bg-rose-100 { background-color: var(--rose-100); }
+    .bg-rose-500 { background-color: var(--rose-500); }
+    .bg-amber-100 { background-color: var(--amber-100); }
+    .bg-ink-800 { background-color: var(--ink-800); }
+    .bg-overlay { background-color: rgba(22, 20, 18, 0.6); backdrop-filter: blur(3px); }
+    .bg-header { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); }
+    .bg-nav { background-color: rgba(255, 255, 255, 0.96); backdrop-filter: blur(8px); }
+    .bg-logo-hover { background-color: rgba(22, 20, 18, 0.45); }
+
+    .text-center { text-align: center; }
+    .text-white { color: #FFFFFF; }
+    .text-ink-700 { color: var(--ink-700); }
+    .text-ink-800 { color: var(--ink-800); }
+    .text-stone-400 { color: var(--stone-400); }
+    .text-stone-500 { color: var(--stone-500); }
+    .text-stone-600 { color: var(--stone-600); }
+    .text-stone-700 { color: var(--stone-700); }
+    .text-sage-600 { color: var(--sage-600); }
+    .text-sage-700 { color: var(--sage-700); }
+    .text-champagne-600 { color: var(--champagne-600); }
+    .text-champagne-700 { color: var(--champagne-700); }
+    .text-emerald-700 { color: var(--emerald-700); }
+    .text-emerald-800 { color: var(--emerald-800); }
+    .text-emerald-900 { color: var(--emerald-900); }
+    .text-rose-500 { color: var(--rose-500); }
+    .text-rose-600 { color: var(--rose-600); }
+    .text-rose-700 { color: var(--rose-700); }
+    .text-rose-800 { color: var(--rose-800); }
+    .text-amber-700 { color: var(--amber-700); }
+    .text-amber-800 { color: var(--amber-800); }
+
+    .text-10 { font-size: 0.625rem; line-height: 0.875rem; }
+    .text-11 { font-size: 0.6875rem; line-height: 1rem; }
+    .text-xs { font-size: 0.75rem; line-height: 1rem; }
+    .text-sm { font-size: 0.875rem; line-height: 1.25rem; }
+    .text-base { font-size: 1rem; line-height: 1.5rem; }
+    .text-lg { font-size: 1.125rem; line-height: 1.75rem; }
+    .text-xl { font-size: 1.25rem; line-height: 1.75rem; }
+    .text-2xl { font-size: 1.5rem; line-height: 2rem; }
+    .font-semibold { font-weight: 600; }
+    .font-bold { font-weight: 700; }
+    .font-extrabold { font-weight: 800; }
+    .leading-none { line-height: 1; }
+    .leading-tight { line-height: 1.25; }
+
+    .shadow-xs { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); }
+    .shadow-sm { box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); }
+    .shadow-md { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); }
+    .shadow-xl { box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14); }
+    .shadow-2xl { box-shadow: 0 24px 48px rgba(0, 0, 0, 0.24); }
+    .shadow-card { box-shadow: var(--shadow-card); }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+      color: inherit;
+    }
+
+    button {
+      border: 1px solid transparent;
+      background: transparent;
+      transition: background-color 0.15s ease, transform 0.1s ease, opacity 0.15s ease;
+    }
+
+    button:active { transform: scale(0.99); }
+
+    .bg-sage-600:hover { background-color: var(--sage-700); }
+    .bg-champagne-500:hover { background-color: var(--champagne-600); }
+    .bg-emerald-600:hover { background-color: var(--emerald-700); }
+    .bg-alabaster-100:hover { background-color: var(--alabaster-200); }
+    .bg-alabaster-50.hover-sage:hover { background-color: var(--sage-50); }
+    .hover-underline:hover { text-decoration: underline; }
+
+    .group { position: relative; }
+    .logo-hover-badge {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 0.625rem;
+      font-weight: 700;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .group:hover .logo-hover-badge { opacity: 1; }
+
+    .img-contain {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    .block { display: block; }
+    .inline-block { display: inline-block; }
+    .rounded-checkbox { width: 1rem; height: 1rem; }
+
+    .tag-chip {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.5rem;
+      background-color: var(--sage-50);
+      border: 1px solid var(--sage-200);
+      color: var(--sage-700);
+      font-size: 0.6875rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .tag-chip:hover { background-color: var(--sage-100); }
+
+    @page { size: auto; margin: 15mm; }
+    @media print {
+      body * { visibility: hidden; }
+      #printable-receipt, #printable-receipt * { visibility: visible; }
+      #printable-receipt {
+        position: fixed;
+        inset: 0;
+        background: #FFF;
+        padding: 24px;
+        z-index: 9999;
+        margin: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .no-print { display: none; }
+    }
+  </style>
 </head>
 <body>
 
-  <header>
-    <div class="container nav-wrap">
-      <a href="index.html" class="logo">Ana Sena <span>Psicologia</span></a>
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav>
-        <ul>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#areas">Áreas de atuação</a></li>
-          <li><a href="#como-funciona">Como funciona</a></li>
-          <li><a href="#faq">Dúvidas</a></li>
-          <li><a href="https://wa.me/5521978845463" class="btn-nav">Agendar conversa</a></li>
-        </ul>
-      </nav>
+  <!-- TELA DE LOGIN -->
+  <div id="tela-login" class="fixed inset-0 z-50 bg-sage-700 flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl text-center space-y-4 border border-alabaster-200">
+      <div class="relative w-28 h-28 rounded-2xl bg-alabaster-50 mx-auto flex items-center justify-center border-2 shadow-md p-1.5 overflow-hidden group">
+        <img id="img-logo-login" class="img-contain" alt="Ana Sena Psicologia">
+        <label for="input-upload-logo" class="logo-hover-badge bg-logo-hover cursor-pointer">
+          📷 Alterar Logo
+        </label>
+      </div>
+      <div>
+        <h2 class="font-bold text-xl text-ink-800 m-0">Ana Sena Psicologia</h2>
+        <p class="text-xs text-sage-600 font-semibold mt-1">Dra. Ana Paula Dias Sena &bull; CRP 05/61.450 (RT)</p>
+        <p class="text-11 text-stone-500 mt-0.5">CRP PJ: 05/03324 &bull; CNPJ: 52.235.189/0001-03 &bull; CRP-05 & LGPD</p>
+      </div>
+      <div class="space-y-3 pt-1">
+        <div class="no-print">
+          <input type="file" id="input-upload-logo" accept="image/*" onchange="atualizarLogoSistema(event)" class="hidden">
+        </div>
+        <button onclick="entrarSistema()" class="w-full py-4 rounded-xl bg-sage-600 text-white font-bold text-sm shadow-md cursor-pointer">
+          🔓 Acessar App Clínico
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast-container" class="fixed bottom-24 right-4 z-50 flex flex-col gap-2 pointer-events-none no-print"></div>
+
+  <!-- MODAL UNIVERSAL -->
+  <div id="app-modal" class="hidden fixed inset-0 z-50 bg-overlay flex items-center justify-center p-4 overflow-y-auto no-print" onclick="if(event.target === this) fecharModal()">
+    <div id="app-modal-box" class="bg-white rounded-3xl w-full max-w-2xl p-6 shadow-2xl border border-alabaster-200 my-auto max-h-90vh overflow-y-auto"></div>
+  </div>
+
+  <!-- CABEÇALHO -->
+  <header class="bg-header border-b border-alabaster-200 sticky top-0 z-30 no-print">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center space-x-3 cursor-pointer" onclick="mudarAba('dashboard')">
+        <div class="relative w-12 h-12 rounded-2xl overflow-hidden border-2 bg-alabaster-50 shrink-0 shadow-xs flex items-center justify-center p-1 group">
+          <img id="img-logo-header" class="img-contain" alt="AS">
+        </div>
+        <div>
+          <h1 class="font-bold text-base text-ink-800 leading-tight m-0">Ana Sena Psicologia</h1>
+          <p class="text-xs text-sage-600 font-semibold m-0">Dra. Ana Paula Dias Sena &bull; CRP 05/61.450 (RT) &bull; PJ 05/03324</p>
+        </div>
+      </div>
+      <div class="flex items-center space-x-2">
+        <button onclick="alternarPrivacidade()" id="btn-privacidade" class="px-3 py-2 rounded-xl bg-alabaster-100 text-stone-700 font-bold text-xs cursor-pointer">🔒 Sigilo</button>
+        <button onclick="abrirModalBackupGeral()" class="px-3 py-2 rounded-xl bg-champagne-50 text-champagne-700 border border-champagne-200 font-bold text-xs cursor-pointer">☁️ Exportar / Backup</button>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="flex-grow max-w-4xl w-full mx-auto p-4 sm:p-6 space-y-5">
+
+    <!-- ABA 0: DASHBOARD -->
+    <section id="aba-dashboard" class="space-y-4">
+      <div class="bg-white rounded-3xl p-6 border border-alabaster-200 shadow-card space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-3">
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">Painel Principal &bull; Consultório</h2>
+            <p class="text-xs text-stone-500 mt-1">Selecione abaixo a seção que deseja acessar:</p>
+          </div>
+          <span id="status-rede-badge" class="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-11 font-bold">● Modo Offline Ativo</span>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+          <button onclick="abrirModalCliente()" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">📝</span><span class="font-bold text-xs text-ink-800 block">1. Novo Cadastro</span>
+          </button>
+          <button onclick="mudarAba('agenda')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">📅</span><span class="font-bold text-xs text-ink-800 block">2. Agenda</span>
+          </button>
+          <button onclick="mudarAba('arquivosecreto')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">📁</span><span class="font-bold text-xs text-ink-800 block">3. Arquivo Secreto</span>
+          </button>
+          <button onclick="mudarAba('clientes')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">👤</span><span class="font-bold text-xs text-ink-800 block">4. Clientes</span>
+          </button>
+          <button onclick="mudarAba('produtos')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">📦</span><span class="font-bold text-xs text-ink-800 block">5. Serviços</span>
+          </button>
+          <button onclick="mudarAba('tcc')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">🧠</span><span class="font-bold text-xs text-ink-800 block">6. Tarefas TCC</span>
+          </button>
+          <button onclick="mudarAba('financeiro')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">💰</span><span class="font-bold text-xs text-ink-800 block">7. Financeiro</span>
+          </button>
+          <button onclick="mudarAba('reembolso')" class="p-4 rounded-2xl bg-alabaster-50 hover-sage border border-alabaster-200 text-center space-y-2 cursor-pointer shadow-xs">
+            <span class="text-2xl block">💳</span><span class="font-bold text-xs text-ink-800 block">8. Documentos & Reembolso</span>
+          </button>
+          <button onclick="mudarAba('automacao')" class="sm:col-span-2 p-4 rounded-2xl bg-sage-50 hover-sage border border-sage-200 text-center space-y-1.5 cursor-pointer shadow-xs">
+            <span class="text-2xl block">🤖</span>
+            <span class="font-bold text-xs text-sage-700 block">9. WhatsApp Automático, Retorno & IA</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABA 9: WHATSAPP AUTOMÁTICO, PREVISÃO DE RETORNO & ASSISTENTE IA -->
+    <section id="aba-automacao" class="space-y-4 hidden">
+      <!-- BLOCO 1: WHATSAPP AUTOMÁTICO DOS AGENDAMENTOS -->
+      <div class="bg-white rounded-3xl p-5 sm:p-6 border border-alabaster-200 shadow-card space-y-4 text-xs">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-3">
+          <div>
+            <h2 class="font-serif text-xl font-bold text-ink-800 m-0">WhatsApp Automático dos Agendamentos</h2>
+            <p class="text-11 text-stone-500 mt-0.5">Sincronizado com a agenda de 40 em 40 min e confirmação automática ao agendar</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div>
+              <span class="block text-10 font-bold text-stone-500 mb-1">Enviar Automático?</span>
+              <div class="flex rounded-xl bg-alabaster-100 p-1 font-bold">
+                <button type="button" onclick="setToggleAutomacao('autoAgendamentoAtivo', true)" id="btn-auto-ag-sim" class="px-3 py-1 rounded-lg bg-emerald-600 text-white cursor-pointer">SIM</button>
+                <button type="button" onclick="setToggleAutomacao('autoAgendamentoAtivo', false)" id="btn-auto-ag-nao" class="px-3 py-1 rounded-lg text-stone-700 cursor-pointer">NÃO</button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-10 font-bold text-stone-500 mb-1">Tempo Antecedência (h)</label>
+              <input type="number" id="cfg-antecedencia-h" min="1" max="168" value="24" oninput="atualizarPreviewsAutomacao()" class="w-28 p-1.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-bold text-ink-800">
+            </div>
+          </div>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-champagne-50 border border-champagne-200 text-champagne-700 font-semibold">
+          Ao marcar uma consulta na agenda, o sistema registra automaticamente na linha do tempo e prepara a mensagem com os dados do paciente quando o modo automático estiver em <strong>SIM</strong>.
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label class="block font-bold text-ink-800">Defina a Mensagem que seu Cliente Receberá</label>
+            <textarea id="cfg-msg-agendamento" rows="4" oninput="atualizarPreviewsAutomacao()" class="w-full p-3 rounded-2xl border border-alabaster-200 bg-alabaster-50 text-ink-800"></textarea>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="text-10 font-bold text-stone-500 self-center mr-1">Tags:</span>
+              <button type="button" onclick="inserirTag('cfg-msg-agendamento', '[NOME_CLIENTE]')" class="tag-chip">[NOME_CLIENTE]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-agendamento', '[DATA]')" class="tag-chip">[DATA]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-agendamento', '[HORA]')" class="tag-chip">[HORA]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-agendamento', '[PROFISSIONAL]')" class="tag-chip">[PROFISSIONAL]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-agendamento', '[SERVICO]')" class="tag-chip">[SERVICO]</button>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="block font-bold text-sage-700">Exemplo Pré-Visualização</label>
+            <div id="preview-msg-agendamento" class="p-3.5 rounded-2xl bg-sage-50 border border-sage-200 text-ink-800 whitespace-pre-line min-h-28"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-end pt-2">
+          <button type="button" onclick="salvarConfigAutomacao()" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-bold cursor-pointer">✓ Salvar Automação de Agendamento</button>
+        </div>
+      </div>
+
+      <!-- BLOCO 2: WHATSAPP DA PREVISÃO DE RETORNO -->
+      <div class="bg-white rounded-3xl p-5 sm:p-6 border border-alabaster-200 shadow-card space-y-4 text-xs">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-3">
+          <div>
+            <h3 class="font-serif text-lg font-bold text-ink-800 m-0">WhatsApp da Previsão de Retorno</h3>
+            <p class="text-11 text-stone-500 mt-0.5">Lembrete automático de retorno após o ciclo de sessões</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div>
+              <span class="block text-10 font-bold text-stone-500 mb-1">Enviar Previsão?</span>
+              <div class="flex rounded-xl bg-alabaster-100 p-1 font-bold">
+                <button type="button" onclick="setToggleAutomacao('autoRetornoAtivo', true)" id="btn-ret-sim" class="px-3 py-1 rounded-lg bg-emerald-600 text-white cursor-pointer">SIM</button>
+                <button type="button" onclick="setToggleAutomacao('autoRetornoAtivo', false)" id="btn-ret-nao" class="px-3 py-1 rounded-lg text-stone-700 cursor-pointer">NÃO</button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-10 font-bold text-stone-500 mb-1">Avisar após (dias)</label>
+              <input type="number" id="cfg-retorno-dias" min="1" max="365" value="30" oninput="atualizarPreviewsAutomacao()" class="w-28 p-1.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-bold text-ink-800">
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="space-y-2">
+            <label class="block font-bold text-ink-800">Mensagem da Previsão de Retorno</label>
+            <textarea id="cfg-msg-retorno" rows="3" oninput="atualizarPreviewsAutomacao()" class="w-full p-3 rounded-2xl border border-alabaster-200 bg-alabaster-50 text-ink-800"></textarea>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="text-10 font-bold text-stone-500 self-center mr-1">Tags:</span>
+              <button type="button" onclick="inserirTag('cfg-msg-retorno', '[NOME_CLIENTE]')" class="tag-chip">[NOME_CLIENTE]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-retorno', '[DIAS_RETORNO]')" class="tag-chip">[DIAS_RETORNO]</button>
+              <button type="button" onclick="inserirTag('cfg-msg-retorno', '[PROFISSIONAL]')" class="tag-chip">[PROFISSIONAL]</button>
+            </div>
+          </div>
+
+          <div class="space-y-2">
+            <label class="block font-bold text-sage-700">Exemplo Pré-Visualização</label>
+            <div id="preview-msg-retorno" class="p-3.5 rounded-2xl bg-sage-50 border border-sage-200 text-ink-800 whitespace-pre-line min-h-28"></div>
+          </div>
+        </div>
+
+        <div class="flex justify-end pt-2">
+          <button type="button" onclick="salvarConfigAutomacao()" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-bold cursor-pointer">✓ Salvar Previsão de Retorno</button>
+        </div>
+      </div>
+
+      <!-- BLOCO 3: ASSISTENTE DE ATENDIMENTO COM IA -->
+      <div class="bg-white rounded-3xl p-5 sm:p-6 border border-alabaster-200 shadow-card space-y-4 text-xs">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-3">
+          <div>
+            <h3 class="font-serif text-lg font-bold text-ink-800 m-0">Assistente de Atendimento com IA</h3>
+            <p class="text-11 text-stone-500 mt-0.5">Responde dúvidas iniciais sobre horários de 40 min, modalidades e reembolso</p>
+          </div>
+          <div>
+            <span class="block text-10 font-bold text-stone-500 mb-1">Ativar Assistente IA?</span>
+            <div class="flex rounded-xl bg-alabaster-100 p-1 font-bold">
+              <button type="button" onclick="setToggleAutomacao('iaAtiva', true)" id="btn-ia-sim" class="px-3 py-1 rounded-lg bg-emerald-600 text-white cursor-pointer">SIM</button>
+              <button type="button" onclick="setToggleAutomacao('iaAtiva', false)" id="btn-ia-nao" class="px-3 py-1 rounded-lg text-stone-700 cursor-pointer">NÃO</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block font-bold text-stone-600 mb-1">Nome do Assistente</label>
+            <input type="text" id="cfg-ia-nome" value="Sofia • Assistente AS Psicologia" oninput="atualizarPreviewsAutomacao()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-semibold">
+          </div>
+          <div>
+            <label class="block font-bold text-stone-600 mb-1">Mensagem de Boas-Vindas</label>
+            <input type="text" id="cfg-ia-boasvindas" value="Olá! Como posso ajudar com seu agendamento hoje?" oninput="atualizarPreviewsAutomacao()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-semibold">
+          </div>
+        </div>
+
         <div>
-          <p class="eyebrow">Psicoterapia em Nova Iguaçu e São João de Meriti</p>
-          <h1>Um espaço para você ser <span class="destaque">ouvido de verdade.</span></h1>
-          <p class="hero-texto">
-            Às vezes só precisamos de alguém que escute sem pressa e sem julgamento.
-            Atendimento psicológico presencial e online, com base na Terapia
-            Cognitivo-Comportamental, para ansiedade, autoestima, relacionamentos e
-            momentos em que a vida pede uma pausa para se reorganizar.
-          </p>
-          <div class="hero-ctas">
-            <a href="https://wa.me/5521978845463" class="btn btn-primario">Quero conversar</a>
-            <a href="#sobre" class="btn btn-secundario">Conhecer a psicóloga</a>
-          </div>
+          <label class="block font-bold text-stone-600 mb-1">Descrição / Regras do Consultório para a IA</label>
+          <textarea id="cfg-ia-regras" rows="3" oninput="atualizarPreviewsAutomacao()" class="w-full p-3 rounded-2xl border border-alabaster-200 bg-alabaster-50">Atendimento com Dra. Ana Paula Dias Sena (CRP 05/61.450 - RT, CRP PJ 05/03324). Agenda com intervalos de 40 em 40 minutos. Recibo para reembolso com código TUSS 50000470 quando aceito pela operadora.</textarea>
         </div>
-        <div class="hero-visual">
-          <img src="images/foto-consultorio.jpeg" alt="Espaço de atendimento de Ana Sena Psicologia">
-          <div class="hero-visual-citacao">
-            “Você não precisa chegar com todas as respostas. Só precisa chegar.”
-            <span>Ana Sena · Psicóloga CRP 05/61450</span>
+
+        <div class="p-3.5 rounded-2xl bg-alabaster-50 border border-alabaster-200 space-y-2">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-bold text-ink-800">Testar Resposta Automática da IA:</span>
+            <div class="flex gap-1.5 flex-1">
+              <input type="text" id="sim-ia-pergunta" value="Qual o código TUSS para reembolso e como agendar?" class="p-2 rounded-xl border border-alabaster-200 bg-white text-xs flex-1">
+              <button type="button" onclick="simularRespostaIA()" class="px-3 py-2 rounded-xl bg-sage-600 text-white font-bold cursor-pointer shrink-0">Gerar Resposta</button>
+            </div>
           </div>
+          <p id="sim-ia-resposta" class="text-sage-700 font-semibold m-0 pt-1">Clique em "Gerar Resposta" para testar o assistente com as regras atuais.</p>
+        </div>
+
+        <div class="flex justify-end pt-2">
+          <button type="button" onclick="salvarConfigAutomacao()" class="px-5 py-2.5 rounded-xl bg-emerald-600 text-white font-bold cursor-pointer">✓ Salvar Configurações de Automação & IA</button>
         </div>
       </div>
     </section>
 
-    <!-- SELOS / DIFERENCIAIS -->
-    <div class="container">
-      <div class="selos">
-        <div class="selos-grid">
-          <div class="selo-item">Atendimento humanizado</div>
-          <div class="selo-item">Sigilo e ética profissional</div>
-          <div class="selo-item">Presencial e online</div>
-          <div class="selo-item">Abordagem TCC</div>
+    <!-- ABA 1 & 4: GESTÃO DE CLIENTES -->
+    <section id="aba-clientes" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">Cadastro & Gestão de Clientes</h2>
+            <p class="text-xs text-stone-500 mt-1">Buscar por nome, editar, excluir, alternar Ativo/Inativo e atualizar caixa</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="flex rounded-xl bg-alabaster-100 p-1 text-11 font-bold">
+              <button onclick="mudarFiltroStatusCliente('todos')" id="filtro-cli-todos" class="px-2.5 py-1 rounded-lg bg-sage-600 text-white cursor-pointer">Todos</button>
+              <button onclick="mudarFiltroStatusCliente('Ativo')" id="filtro-cli-Ativo" class="px-2.5 py-1 rounded-lg text-stone-700 cursor-pointer">Ativos</button>
+              <button onclick="mudarFiltroStatusCliente('Inativo')" id="filtro-cli-Inativo" class="px-2.5 py-1 rounded-lg text-stone-700 cursor-pointer">Inativos</button>
+            </div>
+            <button onclick="abrirModalCliente()" class="px-4 py-2.5 rounded-xl bg-sage-600 text-white font-bold text-xs cursor-pointer">
+              + Novo Cliente Completo
+            </button>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pt-1">
+          <input type="text" id="busca-cliente" oninput="renderClientes()" placeholder="🔍 Buscar cliente por nome, convênio ou serviço..." class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-alabaster-50 text-xs font-semibold text-ink-800">
         </div>
       </div>
-    </div>
+      <div id="lista-pacientes-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+    </section>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="container">
-      <div class="sobre-grid surgir">
-        <img src="images/foto-ana-sena.jpeg" alt="Ana Sena, psicóloga CRP 05/61450" class="sobre-foto">
+    <!-- TELA DE RESUMO E DETALHES DO CLIENTE -->
+    <section id="aba-detalhe-cliente" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-6 border border-alabaster-200 shadow-card space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-3 border-b border-alabaster-200 pb-4">
+          <div>
+            <button onclick="mudarAba('clientes')" class="text-xs font-bold text-sage-600 hover-underline mb-1 block cursor-pointer">&larr; Voltar à Lista</button>
+            <h2 id="detalhe-nome-cliente" class="font-serif text-2xl font-bold text-ink-800 m-0">Nome do Paciente</h2>
+            <p id="detalhe-sub-cliente" class="text-xs text-stone-500 mt-1">Convênio &bull; Contato</p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="salvarAlteracoesClienteAtual()" class="px-4 py-2 bg-sage-600 text-white rounded-xl font-bold text-xs cursor-pointer">💾 Salvar Alterações</button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-2 border-b border-alabaster-200 pb-3 no-print">
+          <button onclick="mudarSubAbaCliente('linha')" id="subtab-linha" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-sage-600 text-white cursor-pointer">📈 Linha do Tempo</button>
+          <button onclick="mudarSubAbaCliente('anamnese')" id="subtab-anamnese" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer">📋 Anamnese e Ficha</button>
+          <button onclick="mudarSubAbaCliente('contrato')" id="subtab-contrato" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer">📜 Contrato / Orçamento</button>
+          <button onclick="mudarSubAbaCliente('anexos')" id="subtab-anexos" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer">📎 Anexos</button>
+          <button onclick="mudarSubAbaCliente('venda')" id="subtab-venda" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer">🛒 Venda / Pacotes</button>
+          <button onclick="mudarSubAbaCliente('agendamento')" id="subtab-agendamento" class="px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer">📅 Histórico Agendamento</button>
+        </div>
+
+        <div id="conteudo-sub-cliente" class="pt-2 text-xs space-y-3"></div>
+      </div>
+    </section>
+
+    <!-- ABA 2: AGENDA -->
+    <section id="aba-agenda" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h2 id="agenda-mes-ano" class="font-serif text-2xl font-bold text-ink-800 capitalize leading-none m-0"></h2>
+            <p id="agenda-subdata" class="text-xs text-stone-500 mt-1"> </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <input type="date" id="input-data-agenda" onchange="mudarDataSelecionada(this.value)" class="text-xs p-2 rounded-xl border border-alabaster-200 bg-alabaster-50 font-semibold text-ink-800">
+            <button onclick="irParaHoje()" class="text-xs bg-champagne-50 text-champagne-700 border border-champagne-200 px-3 py-2 rounded-xl font-bold cursor-pointer">Hoje</button>
+          </div>
+        </div>
+        <div id="semana-strip" class="grid grid-cols-7 gap-1.5 pt-1"></div>
+
+        <!-- AJUSTE DE HORÁRIO INICIAL E FINAL -->
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-3 border-t border-alabaster-100 text-xs">
+          <span class="font-bold text-stone-700">⏰ Faixa de Atendimento (40 em 40 min):</span>
+          <div class="flex flex-wrap items-center gap-2">
+            <label class="font-semibold text-stone-600">Início:
+              <select id="agenda-hora-inicio" onchange="atualizarFaixaAgenda()" class="ml-1 p-1.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-bold text-ink-800"></select>
+            </label>
+            <label class="font-semibold text-stone-600">Fim:
+              <select id="agenda-hora-fim" onchange="atualizarFaixaAgenda()" class="ml-1 p-1.5 rounded-xl border border-alabaster-200 bg-alabaster-50 font-bold text-ink-800"></select>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-alabaster-200">
+          <div>
+            <h3 id="agenda-titulo-faixa" class="font-bold text-sm text-ink-800 m-0">2. Agenda (40 em 40 min) &bull; Automação WhatsApp</h3>
+            <p class="text-11 text-stone-500 m-0 mt-0.5">Horários ocupados ficam bloqueados • Automação sincronizada ao agendar</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="abrirModalBloqueioProfissional()" class="px-3 py-1.5 bg-champagne-50 text-champagne-700 border border-champagne-200 rounded-xl font-bold text-xs cursor-pointer">🔒 Bloquear Horário</button>
+            <button onclick="abrirModalAgendamento()" class="px-3 py-1.5 bg-sage-600 text-white rounded-xl font-bold text-xs cursor-pointer">+ Agendar</button>
+          </div>
+        </div>
+        <div id="linha-tempo-slots" class="space-y-2.5"></div>
+      </div>
+    </section>
+
+    <!-- ABA 3: ARQUIVO SECRETO -->
+    <section id="aba-arquivosecreto" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p class="eyebrow">Sobre a psicóloga</p>
-          <h2>Aqui, você não precisa ter pressa.</h2>
-          <p style="margin: var(--espaco-sm) 0 var(--espaco-md); font-size: 1.05rem;">
-            Acredito que cada pessoa carrega sua própria forma de sentir e enfrentar a vida —
-            e que o papel da terapia não é dar respostas prontas, mas caminhar ao lado de você
-            enquanto encontra as suas. Trabalho com a Terapia Cognitivo-Comportamental (TCC),
-            uma abordagem com base científica, para transformar pensamentos que pesam em
-            clareza para seguir adiante.
+          <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">3. Arquivo Secreto & Prontuários</h2>
+          <p class="text-xs text-stone-500 mt-1">Exportação individual nativa para PDF, Word (.doc) e Excel (.csv)</p>
+        </div>
+        <button onclick="exportarTodosPacientesExcel()" class="px-4 py-2 bg-emerald-600 text-white font-bold text-xs rounded-xl cursor-pointer shadow-xs">
+          📊 Baixar Planilha Geral (Excel .csv)
+        </button>
+      </div>
+      <div id="lista-arquivo-secreto" class="space-y-4"></div>
+    </section>
+
+    <!-- ABA 5: PRODUTOS E SERVIÇOS -->
+    <section id="aba-produtos" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">5. Produtos & Serviços</h2>
+          <p class="text-xs text-stone-500 mt-1">Adicione ou edite sessões, pacotes e valores do consultório</p>
+        </div>
+        <button onclick="abrirModalProduto()" class="px-4 py-2.5 rounded-xl bg-champagne-500 text-white font-bold text-xs cursor-pointer shadow-xs">
+          + Acrescentar Novo Serviço
+        </button>
+      </div>
+      <div id="lista-produtos-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+    </section>
+
+    <!-- ABA 6: TAREFAS TCC -->
+    <section id="aba-tcc" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">6. Tarefas TCC & Planos de Ação</h2>
+          <p class="text-xs text-stone-500 mt-1">Crie, edite instruções e registre devolutivas terapêuticas</p>
+        </div>
+        <button onclick="abrirModalTarefa()" class="px-4 py-2.5 rounded-xl bg-champagne-500 text-white font-bold text-xs cursor-pointer shadow-xs">
+          + Acrescentar Tarefa TCC
+        </button>
+      </div>
+      <div id="lista-tarefas-tcc" class="space-y-3.5"></div>
+    </section>
+
+    <!-- ABA 7: FINANCEIRO & CAIXA -->
+    <section id="aba-financeiro" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">7. Financeiro & Caixa</h2>
+          <p class="text-xs text-stone-500 mt-1">Lançamento manual com entradas e saídas, totais mensal e anual e gráfico</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <input type="month" id="fin-mes-ref" onchange="renderFinanceiro()" class="text-xs p-2 rounded-xl border border-alabaster-200 bg-alabaster-50 font-bold text-ink-800">
+          <button onclick="abrirModalLancamentoFinanceiro()" class="px-3.5 py-2 rounded-xl bg-sage-600 text-white font-bold text-xs cursor-pointer">+ Lançamento Manual</button>
+          <button onclick="alternarStatusCaixa()" id="btn-status-caixa" class="px-3 py-2 rounded-xl bg-emerald-100 text-emerald-800 font-bold text-xs cursor-pointer">Caixa: Aberto</button>
+        </div>
+      </div>
+
+      <!-- TOTAIS MÊS E ANUAL -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="bg-white p-5 rounded-3xl border border-alabaster-200 shadow-card space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase tracking-wide text-sage-700">📅 Total do Mês</span>
+            <span id="label-mes-ref" class="text-11 font-bold text-stone-500">-</span>
+          </div>
+          <p id="res-saldo-mes" class="text-2xl font-extrabold text-ink-800 m-0">R$ 0,00</p>
+          <div class="flex flex-wrap gap-3 pt-1 text-xs font-bold">
+            <span id="res-entradas-mes" class="text-emerald-700">Entradas: R$ 0,00</span>
+            <span id="res-saidas-mes" class="text-rose-600">Saídas: R$ 0,00</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-5 rounded-3xl border border-alabaster-200 shadow-card space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-extrabold uppercase tracking-wide text-champagne-600">📆 Total Anual</span>
+            <span id="label-ano-ref" class="text-11 font-bold text-stone-500">-</span>
+          </div>
+          <p id="res-saldo-ano" class="text-2xl font-extrabold text-ink-800 m-0">R$ 0,00</p>
+          <div class="flex flex-wrap gap-3 pt-1 text-xs font-bold">
+            <span id="res-entradas-ano" class="text-emerald-700">Entradas: R$ 0,00</span>
+            <span id="res-saidas-ano" class="text-rose-600">Saídas: R$ 0,00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRÁFICO ENTRADAS X SAÍDAS (MÊS / ANUAL) -->
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-3">
+          <div>
+            <h3 class="font-bold text-sm text-ink-800 m-0">📊 Gráfico de Entradas & Saídas</h3>
+            <p id="grafico-subtitulo" class="text-11 text-stone-500 mt-1">Comparativo por período</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3 text-xs font-bold">
+            <span class="flex items-center gap-1.5 text-emerald-700"><span class="w-3 h-3 rounded-xs bg-emerald-600 inline-block"></span> Entradas</span>
+            <span class="flex items-center gap-1.5 text-rose-600"><span class="w-3 h-3 rounded-xs bg-rose-500 inline-block"></span> Saídas</span>
+            <div class="flex rounded-xl bg-alabaster-100 p-1">
+              <button onclick="mudarModoGrafico('mensal')" id="btn-graf-mensal" class="px-3 py-1 rounded-lg bg-sage-600 text-white font-bold text-xs cursor-pointer">Mês</button>
+              <button onclick="mudarModoGrafico('anual')" id="btn-graf-anual" class="px-3 py-1 rounded-lg text-stone-700 font-bold text-xs cursor-pointer">Anual</button>
+            </div>
+          </div>
+        </div>
+        <div id="grafico-financeiro-container" class="w-full overflow-x-auto"></div>
+      </div>
+
+      <!-- EXTRATO DETALHADO COM FILTRO -->
+      <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-200 pb-2">
+          <h3 class="font-bold text-sm text-ink-800 m-0">Extrato Detalhado de Entradas & Saídas</h3>
+          <div class="flex gap-1.5 text-11 font-bold">
+            <button onclick="mudarFiltroExtrato('todos')" id="filtro-ext-todos" class="px-2.5 py-1 rounded-lg bg-sage-600 text-white cursor-pointer">Todos</button>
+            <button onclick="mudarFiltroExtrato('entrada')" id="filtro-ext-entrada" class="px-2.5 py-1 rounded-lg bg-alabaster-100 text-stone-700 cursor-pointer">Entradas</button>
+            <button onclick="mudarFiltroExtrato('saida')" id="filtro-ext-saida" class="px-2.5 py-1 rounded-lg bg-alabaster-100 text-stone-700 cursor-pointer">Saídas</button>
+          </div>
+        </div>
+        <div id="lista-lancamentos-financeiros" class="space-y-2 text-xs"></div>
+      </div>
+    </section>
+
+    <!-- ABA 8: DOCUMENTOS ÉTICOS (PERÍCIA, LAUDO, PARECER) & REEMBOLSO TUSS -->
+    <section id="aba-reembolso" class="space-y-4 hidden">
+      <div class="bg-white rounded-3xl p-5 sm:p-6 border border-alabaster-200 shadow-card space-y-5">
+        <div class="border-b border-alabaster-200 pb-3">
+          <h2 class="font-serif text-2xl font-bold text-ink-800 m-0">8. Documentos Psicológicos & Reembolso</h2>
+          <p class="text-xs text-stone-500 mt-1">Emissão ética conforme regras do CRP-05 (CRP/RJ) e Resoluções do CFP (inclui RT, CRP PJ, Laudo, Parecer e Perícia)</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-champagne-50 border border-champagne-200 text-xs space-y-1.5">
+          <h3 class="font-bold text-champagne-700 text-sm m-0">⚖️ Diretriz Ética CRP-05 (CRP/RJ) & CFP</h3>
+          <p class="text-stone-700 m-0">
+            Emita <strong>Laudo Psicológico</strong> apenas após avaliação psicológica fundamentada com conclusão técnica; <strong>Parecer Psicológico</strong> para responder a questão pontual técnico-científica; e documentos <strong>Periciais</strong> respeitando o âmbito de atuação, imparcialidade, sigilo profissional e guarda documental mínima de 5 anos.
           </p>
+        </div>
 
-          <div class="credencial">
-            <span class="credencial-marca">↳</span>
-            <span>Atendo crianças, adolescentes, adultos, idosos e famílias</span>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div class="p-4 rounded-2xl bg-alabaster-50 border border-alabaster-200 space-y-2">
+            <h3 class="font-bold text-sage-700 text-sm m-0">📝 Descrição do Procedimento</h3>
+            <p class="text-stone-700 m-0">Psicoterapia individual – atendimento psicológico.</p>
+            <p class="text-stone-600 m-0"><strong>Código TUSS:</strong> <strong>50000470</strong> (somente após confirmar com a operadora).</p>
           </div>
-          <div class="credencial">
-            <span class="credencial-marca">↳</span>
-            <span>Presencial em Nova Iguaçu e São João de Meriti, ou online para qualquer lugar do Brasil</span>
+          <div class="p-4 rounded-2xl bg-sage-50 border border-sage-200 space-y-1.5">
+            <h3 class="font-bold text-sage-700 text-sm m-0">👩‍⚕️ Identificação Profissional & PJ</h3>
+            <p class="text-stone-700 m-0"><strong>Responsável Técnica:</strong> Dra. Ana Paula Dias Sena &bull; <strong>CRP 05/61.450</strong></p>
+            <p class="text-stone-700 m-0"><strong>Pessoa Jurídica:</strong> AS Psicologia / Ana Sena Psicologia &bull; <strong>CRP PJ: 05/03324</strong></p>
+            <p class="text-stone-700 m-0"><strong>CNPJ:</strong> 52.235.189/0001-03</p>
           </div>
+        </div>
+
+        <div class="pt-4 border-t border-alabaster-200 space-y-4">
+          <h3 class="font-bold text-sm text-ink-800 m-0">🖨️ Emissão de Recibo, Laudo, Parecer ou Documento Pericial</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-4 rounded-2xl bg-alabaster-50 border border-alabaster-200 text-xs">
+            <div>
+              <label class="block font-bold text-stone-600 mb-1">Tipo de Documento</label>
+              <select id="doc-tipo" onchange="alternarCamposDocumento()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-bold">
+                <option value="recibo">Recibo de Reembolso (TUSS)</option>
+                <option value="laudo">Laudo Psicológico</option>
+                <option value="parecer">Parecer Psicológico</option>
+                <option value="pericia">Documento Pericial / Quesitos</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-bold text-stone-600 mb-1">Selecionar Paciente / Periciando</label>
+              <select id="rec-paciente" onchange="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-semibold"></select>
+            </div>
+            <div id="campo-rec-valor">
+              <label class="block font-bold text-stone-600 mb-1">Valor Efetivamente Pago (R$)</label>
+              <input type="number" id="rec-valor" value="180.00" oninput="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-bold text-sage-700">
+            </div>
+            <div>
+              <label class="block font-bold text-stone-600 mb-1">Data de Emissão / Atendimento</label>
+              <input type="date" id="rec-data" onchange="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-semibold">
+            </div>
+          </div>
+
+          <div id="campos-documento-tecnico" class="hidden grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 rounded-2xl bg-sage-50 border border-sage-200 text-xs">
+            <div>
+              <label class="block font-bold text-sage-700 mb-1">Solicitante / Finalidade / Processo (Ética CRP-05)</label>
+              <input type="text" id="doc-finalidade" value="Avaliação psicológica / Requerimento / Processo" oninput="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-sage-200 bg-white">
+            </div>
+            <div>
+              <label class="block font-bold text-sage-700 mb-1">Registro de Atuação / CRP Técnico</label>
+              <input type="text" id="doc-crp-tecnico" value="CRP 05/61.450 (Responsável Técnica) • CRP PJ: 05/03324" oninput="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-sage-200 bg-white font-semibold">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="block font-bold text-sage-700 mb-1">Síntese Técnica / Fundamentação / Conclusão (Sigilo &amp; Ética)</label>
+              <textarea id="doc-conteudo-tecnico" rows="4" oninput="atualizarPreviewRecibo()" class="w-full p-2.5 rounded-xl border border-sage-200 bg-white">Documento redigido com observância estrita ao Código de Ética Profissional do Psicólogo e às normativas do CFP e CRP-05 (CRP/RJ), resguardando o sigilo e a veracidade das informações técnicas colhidas.</textarea>
+            </div>
+          </div>
+
+          <div id="printable-receipt" class="bg-white p-6 sm:p-8 rounded-2xl border border-alabaster-300 shadow-sm text-xs space-y-5">
+            <div class="flex items-center justify-between pb-4 border-b-2 gap-3">
+              <div class="flex items-center space-x-3">
+                <div class="w-14 h-14 rounded-xl overflow-hidden border bg-alabaster-50 shrink-0 flex items-center justify-center p-1">
+                  <img id="img-logo-recibo" class="img-contain" alt="Logo">
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-bold text-ink-800 m-0">Ana Sena Psicologia</h3>
+                  <p class="text-xs font-semibold text-ink-700 m-0">Dra. Ana Paula Dias Sena &bull; CRP 05/61.450 (RT)</p>
+                  <p class="text-10 text-stone-500 m-0">CRP PJ: 05/03324 &bull; CNPJ: 52.235.189/0001-03 &bull; WhatsApp: (21) 97884-5463</p>
+                </div>
+              </div>
+              <span id="rec-badge-tipo" class="text-10 font-extrabold uppercase bg-champagne-50 text-champagne-700 px-3 py-1 rounded-full border border-champagne-200 shrink-0">Recibo Reembolso</span>
+            </div>
+            <div id="rec-corpo-documento" class="space-y-2 text-ink-800 text-xs sm:text-sm">
+              <p id="rec-p-nome" class="m-0"><strong>Paciente:</strong> -</p>
+              <p id="rec-p-convenio" class="m-0"><strong>Convênio / Carteirinha:</strong> -</p>
+              <p class="m-0"><strong>Descrição do Procedimento:</strong> Psicoterapia individual – atendimento psicológico.</p>
+              <p class="m-0"><strong>Código TUSS:</strong> 50000470 (confirmado com a operadora)</p>
+              <p id="rec-p-detalhes" class="m-0"><strong>Valor e Data:</strong> -</p>
+            </div>
+            <div class="pt-8 text-center border-t border-alabaster-200 space-y-1">
+              <p class="font-bold text-ink-800 text-sm m-0">Dra. Ana Paula Dias Sena</p>
+              <p id="rec-assinatura-sub" class="text-10 text-stone-500 m-0">Psicóloga Responsável Técnica &bull; CRP 05/61.450 &bull; CRP PJ: 05/03324 &bull; CNPJ: 52.235.189/0001-03</p>
+            </div>
+          </div>
+          <button onclick="window.print()" class="w-full py-4 rounded-xl bg-sage-600 text-white font-bold text-xs shadow-xs cursor-pointer">
+            🖨️ Imprimir / Salvar PDF do Documento (Sem Rodapé)
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- ÁREAS DE ATUAÇÃO -->
-    <section id="areas" class="container">
-      <div class="secao-cabecalho centro surgir">
-        <p class="eyebrow">Áreas de atuação</p>
-        <h2>Talvez você se reconheça em um destes momentos</h2>
-        <p>Não existe motivo "pequeno demais" para buscar ajuda. Se algo pesa, já vale a conversa.</p>
-      </div>
-
-      <div class="areas-grid">
-        <a href="ansiedade.html" class="area-card surgir">
-          <span class="area-numero">01</span>
-          <h3>Quando a mente não desliga</h3>
-          <p>Ansiedade, pensamentos acelerados e aquela sensação de estar sempre um passo atrás do próprio cansaço.</p>
-        </a>
-        <a href="relacionamentos.html" class="area-card surgir">
-          <span class="area-numero">02</span>
-          <h3>Quando os vínculos pesam</h3>
-          <p>Conflitos com família, parceiro(a) ou amigos que se repetem e parecem não ter saída.</p>
-        </a>
-        <a href="autoconhecimento.html" class="area-card surgir">
-          <span class="area-numero">03</span>
-          <h3>Quando algo precisa mudar</h3>
-          <p>Decisões importantes, fases de transição, ou a sensação de que é hora de se reencontrar.</p>
-        </a>
-      </div>
-    </section>
-
-    <!-- COMO FUNCIONA -->
-    <section id="como-funciona" class="container">
-      <div class="processo surgir">
-        <div class="secao-cabecalho">
-          <p class="eyebrow">Primeiro atendimento</p>
-          <h2>Dar o primeiro passo é mais simples do que parece</h2>
-        </div>
-        <div class="processo-lista">
-          <div class="processo-passo">
-            <span class="num">01</span>
-            <p>Você manda uma mensagem no WhatsApp, no seu tempo, sem compromisso.</p>
-          </div>
-          <div class="processo-passo">
-            <span class="num">02</span>
-            <p>Conversamos sobre modalidade de atendimento e valores, com toda a transparência.</p>
-          </div>
-          <div class="processo-passo">
-            <span class="num">03</span>
-            <p>Agendamos sua primeira sessão, no horário que fizer sentido para você.</p>
-          </div>
-          <div class="processo-passo">
-            <span class="num">04</span>
-            <p>No encontro, o espaço é todo seu — sem pressa, para você se sentir à vontade.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="container">
-      <div class="secao-cabecalho centro surgir">
-        <p class="eyebrow">Dúvidas frequentes</p>
-        <h2>Perguntas sobre a psicoterapia</h2>
-      </div>
-
-      <div class="faq-lista surgir">
-        <details class="faq-item">
-          <summary class="faq-pergunta">A terapia online tem o mesmo efeito que a presencial?
-            <span class="icone">+</span>
-          </summary>
-          <div class="faq-resposta">
-            <p>Sim. Estudos científicos mostram eficácia equivalente entre psicoterapia online e
-            presencial para a maioria das demandas. A escolha depende da sua preferência e rotina.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-pergunta">Quanto tempo dura o processo terapêutico?
-            <span class="icone">+</span>
-          </summary>
-          <div class="faq-resposta">
-            <p>Não há um prazo fixo: o tempo varia de pessoa para pessoa, de acordo com a demanda
-            trazida e os objetivos definidos junto com a psicóloga ao longo do processo.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-pergunta">Qual a diferença entre psicólogo e psiquiatra?
-            <span class="icone">+</span>
-          </summary>
-          <div class="faq-resposta">
-            <p>O psicólogo atua com escuta, acompanhamento terapêutico e técnicas psicológicas,
-            sem prescrever medicação. O psiquiatra é médico e pode prescrever medicamentos quando
-            necessário. Os dois podem atuar de forma complementar.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-pergunta">Como sei se preciso de acompanhamento psicológico?
-            <span class="icone">+</span>
-          </summary>
-          <div class="faq-resposta">
-            <p>Sinais como ansiedade persistente, cansaço emocional, dificuldade nos
-            relacionamentos ou mudanças significativas na vida são bons motivos para buscar uma
-            conversa inicial e avaliar junto com a psicóloga.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-pergunta">Os atendimentos têm sigilo garantido?
-            <span class="icone">+</span>
-          </summary>
-          <div class="faq-resposta">
-            <p>Sim. O sigilo profissional é um princípio ético fundamental da psicologia,
-            previsto no Código de Ética do Conselho Federal de Psicologia.</p>
-          </div>
-        </details>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="container">
-      <div class="cta-final surgir">
-        <h2>Você merece um espaço só seu.</h2>
-        <p>Não precisa saber exatamente o que dizer. Basta começar — o resto a gente constrói junto, sessão após sessão.</p>
-        <a href="https://wa.me/5521978845463" class="btn btn-primario">Quero começar minha terapia</a>
-      </div>
-    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h4>Ana Sena Psicologia</h4>
-          <p>Acolhimento, ética e cuidado com a sua saúde emocional.</p>
-          <p style="margin-top: var(--espaco-sm);">CRP 05/61450 | CRP-PJ 05/03324</p>
-        </div>
-        <div>
-          <h4>Navegação</h4>
-          <ul>
-            <li><a href="#sobre">Sobre a psicóloga</a></li>
-            <li><a href="#areas">Áreas de atuação</a></li>
-            <li><a href="#faq">Perguntas frequentes</a></li>
-            <li><a href="privacidade.html">Política de Privacidade</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Contato</h4>
-          <ul>
-            <li><a href="https://wa.me/5521978845463">WhatsApp (21) 97884-5463</a></li>
-            <li><a href="mailto:psicologaanasena@gmail.com">psicologaanasena@gmail.com</a></li>
-            <li><a href="https://www.instagram.com/anasenapsi">Instagram @anasenapsi</a></li>
-            <li>Nova Iguaçu e São João de Meriti, RJ</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-base">
-        <span>© 2026 Ana Sena Psicologia — Todos os direitos reservados</span>
-        <span>Atendimentos mediante agendamento prévio</span>
-      </div>
-    </div>
-  </footer>
+  <!-- BARRA INFERIOR -->
+  <nav class="fixed bottom-0 inset-x-0 bg-nav border-t border-alabaster-200 shadow-xl z-40 flex justify-center py-2 px-4 no-print">
+    <button onclick="mudarAba('dashboard')" class="flex items-center gap-2 px-6 py-2 rounded-xl bg-sage-600 text-white font-bold text-xs cursor-pointer shadow-md">
+      <span>🏠 Voltar ao Painel Principal (Início)</span>
+    </button>
+  </nav>
 
-  <a href="https://wa.me/5521978845463" class="whatsapp-flutuante" aria-label="Falar no WhatsApp">
-    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.53 21.5 10.24 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" stroke="white" stroke-width="0" fill="white" opacity="0"/>
-      <path d="M17.6 14.2c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.48-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.15-.15.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.05-.52-.1-.15-.6-1.45-.83-1.98-.22-.5-.45-.43-.62-.44-.16-.01-.35-.01-.54-.01-.2 0-.5.07-.77.37-.27.3-1.02 1-1.02 2.45s1.05 2.85 1.2 3.05c.15.2 2.05 3.13 4.97 4.27 2.92 1.13 2.92.75 3.45.7.52-.05 1.7-.7 1.95-1.37.25-.67.25-1.25.17-1.37-.07-.12-.27-.2-.57-.35z" fill="var(--verde-oliva-escuro)"/>
-      <path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.07-1.33C8.53 21.5 10.24 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.55 0-3.04-.42-4.32-1.18l-.31-.18-3.2.84.86-3.12-.2-.32A8.06 8.06 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8z" fill="var(--verde-oliva-escuro)"/>
-    </svg>
-  </a>
+  <!-- SCRIPT DO SISTEMA -->
+  <script>
+    const LOGO_PADRAO_SVG = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160">
+        <rect width="160" height="160" rx="28" fill="#F1F5F4"/>
+        <circle cx="80" cy="70" r="36" fill="#3D5A52"/>
+        <text x="80" y="80" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="bold" fill="#FFFFFF">AS</text>
+        <text x="80" y="130" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#2D443E">PSICOLOGIA</text>
+      </svg>`
+    );
 
-  <script src="js/main.js"></script>
+    let logoAtual = localStorage.getItem('anasena_custom_logo') || LOGO_PADRAO_SVG;
+
+    function escapeHtml(str) {
+      return String(str ?? '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function hojeIso() {
+      const now = new Date();
+      const y = now.getFullYear();
+      const m = String(now.getMonth() + 1).padStart(2, '0');
+      const d = String(now.getDate()).padStart(2, '0');
+      return `${y}-${m}-${d}`;
+    }
+
+    const DEFAULT_AUTOMACAO = {
+      autoAgendamentoAtivo: true,
+      antecedenciaHoras: 24,
+      msgAgendamento: 'Olá [NOME_CLIENTE]! Passando para confirmar seu atendimento de [SERVICO] com [PROFISSIONAL] no dia [DATA] às [HORA].',
+      autoRetornoAtivo: false,
+      retornoDias: 30,
+      msgRetorno: 'Olá [NOME_CLIENTE]! Já se passaram [DIAS_RETORNO] dias. Vamos agendar seu retorno com [PROFISSIONAL]?',
+      iaAtiva: false,
+      iaNome: 'Sofia • Assistente AS Psicologia',
+      iaBoasVindas: 'Olá! Como posso ajudar com seu agendamento hoje?',
+      iaRegras: 'Atendimento com Dra. Ana Paula Dias Sena (CRP 05/61.450 - RT, CRP PJ 05/03324). Agenda com intervalos de 40 em 40 minutos. Recibo para reembolso com código TUSS 50000470 quando aceito pela operadora.'
+    };
+
+    let db = (() => {
+      try {
+        const raw = localStorage.getItem('anasena_pro_db_v45') || localStorage.getItem('anasena_pro_db_v44');
+        if (raw) return JSON.parse(raw);
+      } catch (e) {}
+      return {
+        pacientes: [
+          {
+            id: '1', nome: 'Camila Mendes Ferreira', wap: '(21) 98877-6655', email: 'camila@email.com', convenio: 'SulAmérica', carteirinha: '987654321', status: 'Ativo',
+            servicoId: 'p1', servicoNome: 'Sessão Individual TCC', valorSessao: 180.00, lancamentoId: 'L1', somadoNoCaixa: true,
+            endereco: { cep: '22041-001', logradouro: 'Av. Atlântica', numero: '1000', bairro: 'Copacabana', cidade: 'Rio de Janeiro / RJ' },
+            extras: { profissao: 'Designer', indicacao: 'Google', observacoes: 'Paciente pontual.' },
+            credito: { saldo: 150.00, historico: 'Bônus de sessão antecipada' },
+            linhaTempo: ['10/11/2026 - Início do processo terapêutico'],
+            anamnese: 'Relata quadro de ansiedade generalizada.',
+            contrato: 'Contrato de prestação de serviços TCC assinado digitalmente em 10/11/2026.',
+            anexos: ['Plano_Terapeutico.pdf', 'Exame_Psicologico.pdf'],
+            venda: ['Sessão Individual TCC - R$ 180,00'],
+            historicoAgendamento: ['10/11/2026 14:00 - Realizada', '17/11/2026 14:00 - Confirmada']
+          }
+        ],
+        produtos: [
+          { id: 'p1', nome: 'Sessão Individual TCC', tipo: 'Serviço', valor: 180.00, desc: 'Atendimento psicológico individual de 40 minutos.' },
+          { id: 'p2', nome: 'Pacote Mensal (4 Sessões)', tipo: 'Pacote', valor: 680.00, desc: 'Acompanhamento semanal com desconto.' }
+        ],
+        agenda: [
+          { id: '101', pacienteId: '1', nome: 'Camila Mendes Ferreira', data: hojeIso(), hora: '14:20', mod: 'Presencial', status: 'Confirmada' }
+        ],
+        agendaConfig: { horaInicio: '09:00', horaFim: '17:00', intervaloMin: 40 },
+        automacaoConfig: { ...DEFAULT_AUTOMACAO },
+        tarefas: [
+          { id: '201', pacienteId: '1', nome: 'Camila Mendes Ferreira', titulo: 'Registro de Pensamentos (RPD)', desc: 'Anotar situações gatilho, emoções e pensamentos automáticos.', resposta: 'Concluído durante a semana.', status: 'Respondida ✓' }
+        ],
+        contabilidade: {
+          caixaStatus: 'Aberto',
+          lancamentos: [
+            { id: 'L1', tipo: 'entrada', data: hojeIso(), descricao: 'Cadastro/Atendimento: Camila Mendes Ferreira (Sessão Individual TCC)', valor: 180.00 }
+          ]
+        }
+      };
+    })();
+
+    db.pacientes = Array.isArray(db.pacientes) ? db.pacientes : [];
+    db.produtos = Array.isArray(db.produtos) ? db.produtos : [];
+    db.agenda = Array.isArray(db.agenda) ? db.agenda : [];
+    db.tarefas = Array.isArray(db.tarefas) ? db.tarefas : [];
+    db.agendaConfig = { horaInicio: '09:00', horaFim: '17:00', intervaloMin: 40, ...(db.agendaConfig || {}) };
+    db.automacaoConfig = { ...DEFAULT_AUTOMACAO, ...(db.automacaoConfig || {}) };
+    db.contabilidade = {
+      caixaStatus: db.contabilidade?.caixaStatus || 'Aberto',
+      lancamentos: Array.isArray(db.contabilidade?.lancamentos) ? db.contabilidade.lancamentos : []
+    };
+
+    function salvar(mensagem = '💾 Salvo com sucesso!') {
+      try {
+        localStorage.setItem('anasena_pro_db_v45', JSON.stringify(db));
+        toast(mensagem);
+      } catch (e) {
+        toast('⚠️ Limite de armazenamento atingido. Exporte um backup .json.');
+      }
+    }
+
+    function toast(msg) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const el = document.createElement('div');
+      el.className = 'bg-ink-800 text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow-xl';
+      el.textContent = msg;
+      container.appendChild(el);
+      setTimeout(() => el.remove(), 3200);
+    }
+
+    function atualizarLogoSistema(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      if (file.size > 1.5 * 1024 * 1024) {
+        toast('⚠️ Escolha uma imagem menor que 1,5 MB para manter o app rápido.');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        logoAtual = e.target.result;
+        try { localStorage.setItem('anasena_custom_logo', logoAtual); } catch (err) {}
+        aplicarLogoNasImagens();
+        toast('📷 Logo atualizada!');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function aplicarLogoNasImagens() {
+      ['img-logo-login', 'img-logo-header', 'img-logo-recibo'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.src = logoAtual;
+      });
+    }
+
+    function entrarSistema() {
+      document.getElementById('tela-login').classList.add('hidden');
+      toast('Bem-vinda, Dra. Ana Sena!');
+      mudarAba('dashboard');
+    }
+
+    let privado = false;
+    function alternarPrivacidade() {
+      privado = !privado;
+      const mainContent = document.querySelector('main');
+      const btn = document.getElementById('btn-privacidade');
+      if (privado) {
+        mainContent.classList.add('blurred');
+        if (btn) btn.textContent = '👁️ Exibir';
+      } else {
+        mainContent.classList.remove('blurred');
+        if (btn) btn.textContent = '🔒 Sigilo';
+      }
+    }
+
+    let dataAtual = hojeIso();
+
+    function mudarAba(aba) {
+      ['dashboard', 'agenda', 'arquivosecreto', 'clientes', 'detalhe-cliente', 'produtos', 'tcc', 'financeiro', 'reembolso', 'automacao'].forEach(a => {
+        const sec = document.getElementById('aba-' + a);
+        if (sec) sec.classList.add('hidden');
+      });
+
+      const ativa = document.getElementById('aba-' + aba);
+      if (ativa) ativa.classList.remove('hidden');
+
+      if (aba === 'agenda') renderAgenda();
+      if (aba === 'arquivosecreto') renderArquivoSecreto();
+      if (aba === 'clientes') renderClientes();
+      if (aba === 'produtos') renderProdutos();
+      if (aba === 'tcc') renderTarefas();
+      if (aba === 'financeiro') renderFinanceiro();
+      if (aba === 'reembolso') carregarSelectsRecibo();
+      if (aba === 'automacao') carregarFormAutomacao();
+    }
+
+    function construirLinkWhatsApp(foneBruto, mensagem) {
+      let fone = (foneBruto || '').replace(/\D/g, '');
+      if (!fone) return null;
+      if (fone.length <= 11 && !fone.startsWith('55')) fone = '55' + fone;
+      return `https://wa.me/${fone}?text=${encodeURIComponent(mensagem)}`;
+    }
+
+    // --- 9. AUTOMAÇÃO WHATSAPP, PREVISÃO DE RETORNO & IA ---
+    function carregarFormAutomacao() {
+      const cfg = db.automacaoConfig;
+      document.getElementById('cfg-antecedencia-h').value = cfg.antecedenciaHoras ?? 24;
+      document.getElementById('cfg-msg-agendamento').value = cfg.msgAgendamento || '';
+      document.getElementById('cfg-retorno-dias').value = cfg.retornoDias ?? 30;
+      document.getElementById('cfg-msg-retorno').value = cfg.msgRetorno || '';
+      document.getElementById('cfg-ia-nome').value = cfg.iaNome || '';
+      document.getElementById('cfg-ia-boasvindas').value = cfg.iaBoasVindas || '';
+      document.getElementById('cfg-ia-regras').value = cfg.iaRegras || '';
+      atualizarBotoesToggleAutomacao();
+      atualizarPreviewsAutomacao();
+    }
+
+    function setToggleAutomacao(chave, valor) {
+      db.automacaoConfig[chave] = Boolean(valor);
+      atualizarBotoesToggleAutomacao();
+      salvar('⚙️ Preferência de automação atualizada!');
+    }
+
+    function atualizarBotoesToggleAutomacao() {
+      const cfg = db.automacaoConfig;
+      const setPair = (idSim, idNao, ativo) => {
+        const bSim = document.getElementById(idSim);
+        const bNao = document.getElementById(idNao);
+        if (!bSim || !bNao) return;
+        bSim.className = ativo ? 'px-3 py-1 rounded-lg bg-emerald-600 text-white cursor-pointer' : 'px-3 py-1 rounded-lg text-stone-700 cursor-pointer';
+        bNao.className = !ativo ? 'px-3 py-1 rounded-lg bg-rose-500 text-white cursor-pointer' : 'px-3 py-1 rounded-lg text-stone-700 cursor-pointer';
+      };
+      setPair('btn-auto-ag-sim', 'btn-auto-ag-nao', Boolean(cfg.autoAgendamentoAtivo));
+      setPair('btn-ret-sim', 'btn-ret-nao', Boolean(cfg.autoRetornoAtivo));
+      setPair('btn-ia-sim', 'btn-ia-nao', Boolean(cfg.iaAtiva));
+    }
+
+    function inserirTag(textareaId, tag) {
+      const el = document.getElementById(textareaId);
+      if (!el) return;
+      const start = el.selectionStart ?? el.value.length;
+      const end = el.selectionEnd ?? el.value.length;
+      el.value = el.value.slice(0, start) + tag + el.value.slice(end);
+      el.focus();
+      atualizarPreviewsAutomacao();
+    }
+
+    function formatarMensagemTemplate(tpl, dados = {}) {
+      const diasRet = dados.diasRetorno ?? (document.getElementById('cfg-retorno-dias')?.value || db.automacaoConfig.retornoDias || 30);
+      return (tpl || '')
+        .replace(/\[NOME_CLIENTE\]/g, dados.nome || 'Camila Mendes Ferreira')
+        .replace(/\[DATA\]/g, dados.dataFmt || '26/11/2026')
+        .replace(/\[HORA\]/g, dados.hora || '14:20')
+        .replace(/\[PROFISSIONAL\]/g, dados.profissional || 'Dra. Ana Paula Dias Sena')
+        .replace(/\[SERVICO\]/g, dados.servico || 'Sessão Individual TCC')
+        .replace(/\[DIAS_RETORNO\]/g, String(diasRet));
+    }
+
+    function atualizarPreviewsAutomacao() {
+      const tplAg = document.getElementById('cfg-msg-agendamento')?.value || '';
+      const tplRet = document.getElementById('cfg-msg-retorno')?.value || '';
+      const pAg = document.getElementById('preview-msg-agendamento');
+      const pRet = document.getElementById('preview-msg-retorno');
+      if (pAg) pAg.textContent = formatarMensagemTemplate(tplAg);
+      if (pRet) pRet.textContent = formatarMensagemTemplate(tplRet);
+    }
+
+    function salvarConfigAutomacao() {
+      db.automacaoConfig.antecedenciaHoras = Math.max(1, Number(document.getElementById('cfg-antecedencia-h')?.value) || 24);
+      db.automacaoConfig.msgAgendamento = document.getElementById('cfg-msg-agendamento')?.value || '';
+      db.automacaoConfig.retornoDias = Math.max(1, Number(document.getElementById('cfg-retorno-dias')?.value) || 30);
+      db.automacaoConfig.msgRetorno = document.getElementById('cfg-msg-retorno')?.value || '';
+      db.automacaoConfig.iaNome = document.getElementById('cfg-ia-nome')?.value || '';
+      db.automacaoConfig.iaBoasVindas = document.getElementById('cfg-ia-boasvindas')?.value || '';
+      db.automacaoConfig.iaRegras = document.getElementById('cfg-ia-regras')?.value || '';
+      salvar('✅ Configurações de WhatsApp Automático, Retorno e IA salvas!');
+      atualizarPreviewsAutomacao();
+    }
+
+    function simularRespostaIA() {
+      const cfg = db.automacaoConfig;
+      const pergunta = (document.getElementById('sim-ia-pergunta')?.value || '').toLowerCase();
+      const respEl = document.getElementById('sim-ia-resposta');
+      if (!respEl) return;
+
+      if (!cfg.iaAtiva) {
+        respEl.textContent = `[Modo IA: NÃO] Ative a chave "SIM" no Assistente de Atendimento com IA para respostas automáticas.`;
+        return;
+      }
+
+      let resposta = `${cfg.iaBoasVindas} (${cfg.iaNome}) `;
+      if (pergunta.includes('tuss') || pergunta.includes('reembolso')) {
+        resposta += `Para reembolso, a descrição é "Psicoterapia individual – atendimento psicológico" com código TUSS 50000470 (após confirmação com sua operadora), emitido pela Dra. Ana Paula Dias Sena (CRP 05/61.450 • CRP PJ 05/03324).`;
+      } else if (pergunta.includes('horário') || pergunta.includes('agendar') || pergunta.includes('40')) {
+        resposta += `Nossos atendimentos seguem grade de 40 em 40 minutos (${db.agendaConfig?.horaInicio || '09:00'} às ${db.agendaConfig?.horaFim || '17:00'}), com confirmação automática via WhatsApp.`;
+      } else {
+        resposta += cfg.iaRegras;
+      }
+      respEl.textContent = resposta;
+    }
+
+    function processarAutomacaoAoAgendar(pac, dataIso, horaStr) {
+      const cfg = db.automacaoConfig || {};
+      const dataFmt = dataIso ? dataIso.split('-').reverse().join('/') : '';
+      const agoraFmt = new Date().toLocaleDateString('pt-BR');
+
+      if (!Array.isArray(pac.historicoAgendamento)) pac.historicoAgendamento = [];
+      pac.historicoAgendamento.push(`${dataFmt} ${horaStr} - Agendado (40 min)`);
+
+      if (!Array.isArray(pac.linhaTempo)) pac.linhaTempo = [];
+      pac.linhaTempo.push(`${agoraFmt} - Agendamento confirmado para ${dataFmt} às ${horaStr}`);
+
+      if (cfg.autoRetornoAtivo) {
+        const dias = cfg.retornoDias || 30;
+        pac.linhaTempo.push(`${agoraFmt} - Previsão de retorno automática em ${dias} dias`);
+      }
+
+      const msg = formatarMensagemTemplate(cfg.msgAgendamento, {
+        nome: pac.nome,
+        dataFmt,
+        hora: horaStr,
+        profissional: 'Dra. Ana Paula Dias Sena',
+        servico: pac.servicoNome || 'Sessão Individual TCC'
+      });
+
+      const linkWap = construirLinkWhatsApp(pac.wap, msg);
+      if (cfg.autoAgendamentoAtivo && linkWap) {
+        toast(`🤖 Automação executada! Mensagem pronta para ${pac.nome}.`);
+        return linkWap;
+      }
+      return null;
+    }
+
+    // --- BUSCA AUTOMÁTICA DE ENDEREÇO PELO CEP ---
+    let ultimoCepConsultado = '';
+    async function buscarEnderecoPorCep(forcar = false) {
+      const cepInput = document.getElementById('m-cep');
+      const statusEl = document.getElementById('cep-status');
+      if (!cepInput) return;
+
+      let digits = cepInput.value.replace(/\D/g, '');
+      cepInput.value = digits.length > 5 ? digits.slice(0, 5) + '-' + digits.slice(5, 8) : digits;
+
+      if (digits.length !== 8) {
+        if (statusEl) statusEl.textContent = digits.length > 0 ? 'Digite os 8 dígitos do CEP...' : '';
+        return;
+      }
+
+      if (!forcar && digits === ultimoCepConsultado) return;
+      ultimoCepConsultado = digits;
+
+      if (statusEl) {
+        statusEl.textContent = '🔎 Buscando endereço...';
+        statusEl.className = 'text-11 text-sage-600 font-semibold mt-1';
+      }
+
+      try {
+        const resp = await fetch(`https://viacep.com.br/ws/${digits}/json/`);
+        const data = await resp.json();
+        if (data.erro) {
+          if (statusEl) {
+            statusEl.textContent = '⚠️ CEP não encontrado. Preencha manualmente.';
+            statusEl.className = 'text-11 text-amber-700 font-semibold mt-1';
+          }
+          return;
+        }
+        if (data.logradouro && document.getElementById('m-logradouro')) document.getElementById('m-logradouro').value = data.logradouro;
+        if (data.bairro && document.getElementById('m-bairro')) document.getElementById('m-bairro').value = data.bairro;
+        if (data.localidade && document.getElementById('m-cidade')) {
+          document.getElementById('m-cidade').value = data.uf ? `${data.localidade} / ${data.uf}` : data.localidade;
+        }
+        if (statusEl) {
+          statusEl.textContent = '✅ Endereço preenchido automaticamente!';
+          statusEl.className = 'text-11 text-emerald-700 font-semibold mt-1';
+        }
+      } catch (err) {
+        if (statusEl) {
+          statusEl.textContent = '⚠️ Sem conexão para buscar CEP. Preencha manualmente.';
+          statusEl.className = 'text-11 text-amber-700 font-semibold mt-1';
+        }
+      }
+    }
+
+    // --- 5. PRODUTOS E SERVIÇOS ---
+    function renderProdutos() {
+      document.getElementById('lista-produtos-grid').innerHTML = db.produtos.map(prod => `
+        <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card flex flex-col justify-between space-y-3 text-xs">
+          <div>
+            <div class="flex items-center justify-between gap-2">
+              <span class="font-bold text-sm text-ink-800">${escapeHtml(prod.nome)}</span>
+              <span class="px-2.5 py-0.5 rounded-full bg-champagne-50 text-champagne-700 font-bold text-10">${escapeHtml(prod.tipo || 'Serviço')}</span>
+            </div>
+            <p class="text-stone-600 mt-1.5">${escapeHtml(prod.desc || 'Sem descrição.')}</p>
+          </div>
+          <div class="flex items-center justify-between pt-3 border-t border-alabaster-100">
+            <span class="font-extrabold text-sage-700 text-sm">R$ ${Number(prod.valor || 0).toFixed(2).replace('.', ',')}</span>
+            <div class="flex gap-2">
+              <button onclick="abrirModalProduto('${escapeHtml(prod.id)}')" class="px-3 py-1.5 bg-alabaster-100 text-stone-700 rounded-xl font-bold cursor-pointer">✏️ Editar</button>
+              <button onclick="excluirProduto('${escapeHtml(prod.id)}')" class="px-2.5 py-1.5 bg-rose-50 text-rose-600 rounded-xl font-bold cursor-pointer">✕</button>
+            </div>
+          </div>
+        </div>
+      `).join('') || '<p class="text-xs text-stone-400">Nenhum serviço cadastrado.</p>';
+    }
+
+    function abrirModalProduto(id = null) {
+      const prod = id ? (db.produtos.find(p => p.id === id) || {}) : { tipo: 'Serviço', valor: 180 };
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">${id ? 'Editar Serviço / Produto' : 'Acrescentar Novo Serviço'}</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div><label class="block font-bold text-stone-600 mb-1">Nome do Serviço / Pacote</label><input type="text" id="prod-nome" value="${escapeHtml(prod.nome || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+          <div class="grid grid-cols-2 gap-2">
+            <div><label class="block font-bold text-stone-600 mb-1">Tipo</label><select id="prod-tipo" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white"><option ${prod.tipo==='Serviço'?'selected':''}>Serviço</option><option ${prod.tipo==='Pacote'?'selected':''}>Pacote</option><option ${prod.tipo==='Avaliação'?'selected':''}>Avaliação</option></select></div>
+            <div><label class="block font-bold text-stone-600 mb-1">Valor (R$)</label><input type="number" step="0.01" id="prod-valor" value="${Number(prod.valor || 0)}" class="w-full p-2.5 rounded-xl border border-alabaster-200 font-bold text-sage-700"></div>
+          </div>
+          <div><label class="block font-bold text-stone-600 mb-1">Descrição</label><textarea id="prod-desc" rows="3" class="w-full p-2.5 rounded-xl border border-alabaster-200">${escapeHtml(prod.desc || '')}</textarea></div>
+          <div class="flex justify-end gap-2 pt-3 border-t border-alabaster-200">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="salvarProdutoModal('${escapeHtml(id || '')}')" class="px-5 py-2 bg-champagne-500 text-white rounded-xl font-bold cursor-pointer">Salvar Serviço</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function salvarProdutoModal(id) {
+      const nome = (document.getElementById('prod-nome')?.value || '').trim();
+      if (!nome) { toast('⚠️ Informe o nome do serviço.'); return; }
+      const dados = {
+        id: id || 'p' + Date.now(),
+        nome,
+        tipo: document.getElementById('prod-tipo').value,
+        valor: Math.max(0, parseFloat(document.getElementById('prod-valor').value) || 0),
+        desc: document.getElementById('prod-desc').value
+      };
+      if (id) {
+        const idx = db.produtos.findIndex(p => p.id === id);
+        if (idx !== -1) db.produtos[idx] = dados;
+      } else {
+        db.produtos.push(dados);
+      }
+      salvar(); fecharModal(); renderProdutos();
+    }
+
+    function excluirProduto(id) {
+      db.produtos = db.produtos.filter(p => p.id !== id);
+      salvar('🗑️ Serviço removido.'); renderProdutos();
+    }
+
+    // --- 6. TAREFAS TCC ---
+    function renderTarefas() {
+      document.getElementById('lista-tarefas-tcc').innerHTML = db.tarefas.map(t => `
+        <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-2 text-xs">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-alabaster-100 pb-2">
+            <div>
+              <span class="font-bold text-sm text-ink-800">${escapeHtml(t.nome)}</span> &bull;
+              <span class="font-bold text-champagne-600">${escapeHtml(t.titulo)}</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full text-10 font-bold ${t.status.includes('Respondida') ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">${escapeHtml(t.status)}</span>
+              <button onclick="abrirModalTarefa('${escapeHtml(t.id)}')" class="px-3 py-1 bg-alabaster-100 text-stone-700 rounded-xl font-bold cursor-pointer">✏️ Editar / Devolutiva</button>
+              <button onclick="excluirTarefa('${escapeHtml(t.id)}')" class="px-2.5 py-1 bg-rose-50 text-rose-600 rounded-xl font-bold cursor-pointer">✕</button>
+            </div>
+          </div>
+          <p class="text-stone-600 m-0"><strong>Instruções:</strong> ${escapeHtml(t.desc)}</p>
+          <p class="text-sage-700 bg-sage-50 p-2.5 rounded-xl font-semibold m-0"><strong>Devolutiva do Paciente:</strong> ${escapeHtml(t.resposta || 'Aguardando retorno...')}</p>
+        </div>
+      `).join('') || '<p class="text-xs text-stone-400">Nenhuma tarefa atribuída.</p>';
+    }
+
+    function abrirModalTarefa(id = null) {
+      const t = id ? (db.tarefas.find(x => x.id === id) || {}) : { status: 'Pendente' };
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">${id ? 'Editar Tarefa TCC & Devolutiva' : 'Acrescentar Nova Tarefa TCC'}</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div><label class="block font-bold text-stone-600 mb-1">Paciente</label>
+            <select id="t-pac" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white">
+              ${db.pacientes.map(p => `<option value="${escapeHtml(p.id)}" ${t.pacienteId===p.id?'selected':''}>${escapeHtml(p.nome)}</option>`).join('')}
+            </select>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <div><label class="block font-bold text-stone-600 mb-1">Título da Técnica / Tarefa</label><input type="text" id="t-tit" value="${escapeHtml(t.titulo || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            <div><label class="block font-bold text-stone-600 mb-1">Status</label><select id="t-status" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white"><option ${t.status==='Pendente'?'selected':''}>Pendente</option><option ${t.status==='Respondida ✓'?'selected':''}>Respondida ✓</option></select></div>
+          </div>
+          <div><label class="block font-bold text-stone-600 mb-1">Instruções para o Paciente</label><textarea id="t-desc" rows="2" class="w-full p-2.5 rounded-xl border border-alabaster-200">${escapeHtml(t.desc || '')}</textarea></div>
+          <div><label class="block font-bold text-stone-600 mb-1">Devolutiva / Anotações da Sessão</label><textarea id="t-resp" rows="2" class="w-full p-2.5 rounded-xl border border-alabaster-200">${escapeHtml(t.resposta || '')}</textarea></div>
+          <div class="flex justify-end gap-2 pt-3 border-t border-alabaster-200">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="salvarTarefaModal('${escapeHtml(id || '')}')" class="px-5 py-2 bg-champagne-500 text-white rounded-xl font-bold cursor-pointer">Salvar Tarefa</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function salvarTarefaModal(id) {
+      const pid = document.getElementById('t-pac').value;
+      const pac = db.pacientes.find(p => p.id === pid);
+      const tit = (document.getElementById('t-tit')?.value || '').trim();
+      if (!tit) { toast('⚠️ Informe o título da tarefa.'); return; }
+      const dados = {
+        id: id || 't' + Date.now(),
+        pacienteId: pid,
+        nome: pac ? pac.nome : 'Paciente',
+        titulo: tit,
+        status: document.getElementById('t-status').value,
+        desc: document.getElementById('t-desc').value,
+        resposta: document.getElementById('t-resp').value
+      };
+      if (id) {
+        const idx = db.tarefas.findIndex(x => x.id === id);
+        if (idx !== -1) db.tarefas[idx] = dados;
+      } else {
+        db.tarefas.push(dados);
+      }
+      salvar(); fecharModal(); renderTarefas();
+    }
+
+    function excluirTarefa(id) {
+      db.tarefas = db.tarefas.filter(t => t.id !== id);
+      salvar('🗑️ Tarefa removida.'); renderTarefas();
+    }
+
+    // --- 7. FINANCEIRO & CAIXA ---
+    let modoGraficoAtual = 'mensal';
+    let filtroExtratoAtual = 'todos';
+
+    function formatarMoeda(valor) {
+      const num = Number(valor) || 0;
+      const sinal = num < 0 ? '- ' : '';
+      return `${sinal}R$ ${Math.abs(num).toFixed(2).replace('.', ',')}`;
+    }
+
+    function normalizarTipoLancamento(l) {
+      if (l.tipo === 'saida' || l.tipo === 'saída') return 'saida';
+      if (Number(l.valor) < 0) return 'saida';
+      return 'entrada';
+    }
+
+    function mudarModoGrafico(modo) {
+      modoGraficoAtual = modo;
+      const btnMes = document.getElementById('btn-graf-mensal');
+      const btnAno = document.getElementById('btn-graf-anual');
+      if (btnMes && btnAno) {
+        btnMes.className = modo === 'mensal' ? 'px-3 py-1 rounded-lg bg-sage-600 text-white font-bold text-xs cursor-pointer' : 'px-3 py-1 rounded-lg text-stone-700 font-bold text-xs cursor-pointer';
+        btnAno.className = modo === 'anual' ? 'px-3 py-1 rounded-lg bg-sage-600 text-white font-bold text-xs cursor-pointer' : 'px-3 py-1 rounded-lg text-stone-700 font-bold text-xs cursor-pointer';
+      }
+      renderFinanceiro();
+    }
+
+    function mudarFiltroExtrato(filtro) {
+      filtroExtratoAtual = filtro;
+      ['todos', 'entrada', 'saida'].forEach(f => {
+        const btn = document.getElementById('filtro-ext-' + f);
+        if (btn) {
+          btn.className = f === filtro ? 'px-2.5 py-1 rounded-lg bg-sage-600 text-white cursor-pointer' : 'px-2.5 py-1 rounded-lg bg-alabaster-100 text-stone-700 cursor-pointer';
+        }
+      });
+      renderFinanceiro();
+    }
+
+    function renderFinanceiro() {
+      const btnCaixa = document.getElementById('btn-status-caixa');
+      if (btnCaixa) {
+        btnCaixa.textContent = `Caixa: ${db.contabilidade.caixaStatus}`;
+        btnCaixa.className = db.contabilidade.caixaStatus === 'Aberto'
+          ? "px-3 py-2 rounded-xl bg-emerald-100 text-emerald-800 font-bold text-xs cursor-pointer"
+          : "px-3 py-2 rounded-xl bg-rose-100 text-rose-800 font-bold text-xs cursor-pointer";
+      }
+
+      const inputMes = document.getElementById('fin-mes-ref');
+      if (inputMes && !inputMes.value) inputMes.value = hojeIso().slice(0, 7);
+      const mesRef = inputMes?.value || hojeIso().slice(0, 7);
+      const [anoRefStr, mesRefStr] = mesRef.split('-');
+      const anoRef = Number(anoRefStr) || new Date().getFullYear();
+      const mesIdx = (Number(mesRefStr) || 1) - 1;
+
+      const lancs = db.contabilidade.lancamentos || [];
+      let entradasMes = 0, saidasMes = 0, entradasAno = 0, saidasAno = 0;
+
+      lancs.forEach(l => {
+        const dtStr = l.data || hojeIso();
+        const [y, m] = dtStr.split('-').map(Number);
+        const tipo = normalizarTipoLancamento(l);
+        const val = Math.abs(Number(l.valor) || 0);
+        if (y === anoRef) {
+          if (tipo === 'entrada') entradasAno += val; else saidasAno += val;
+          if ((m - 1) === mesIdx) {
+            if (tipo === 'entrada') entradasMes += val; else saidasMes += val;
+          }
+        }
+      });
+
+      const saldoMes = entradasMes - saidasMes;
+      const saldoAno = entradasAno - saidasAno;
+
+      document.getElementById('label-mes-ref').textContent = new Date(anoRef, mesIdx, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+      document.getElementById('label-ano-ref').textContent = `Ano ${anoRef}`;
+
+      const elSaldoMes = document.getElementById('res-saldo-mes');
+      elSaldoMes.textContent = formatarMoeda(saldoMes);
+      elSaldoMes.className = `text-2xl font-extrabold m-0 ${saldoMes >= 0 ? 'text-emerald-700' : 'text-rose-600'}`;
+      document.getElementById('res-entradas-mes').textContent = `Entradas: ${formatarMoeda(entradasMes)}`;
+      document.getElementById('res-saidas-mes').textContent = `Saídas: ${formatarMoeda(saidasMes)}`;
+
+      const elSaldoAno = document.getElementById('res-saldo-ano');
+      elSaldoAno.textContent = formatarMoeda(saldoAno);
+      elSaldoAno.className = `text-2xl font-extrabold m-0 ${saldoAno >= 0 ? 'text-emerald-700' : 'text-rose-600'}`;
+      document.getElementById('res-entradas-ano').textContent = `Entradas: ${formatarMoeda(entradasAno)}`;
+      document.getElementById('res-saidas-ano').textContent = `Saídas: ${formatarMoeda(saidasAno)}`;
+
+      renderGraficoFinanceiro(lancs, anoRef, mesIdx);
+
+      const filtrados = lancs.filter(l => filtroExtratoAtual === 'todos' || normalizarTipoLancamento(l) === filtroExtratoAtual);
+      document.getElementById('lista-lancamentos-financeiros').innerHTML = filtrados.slice().reverse().map(l => {
+        const isSaida = normalizarTipoLancamento(l) === 'saida';
+        const val = Math.abs(Number(l.valor) || 0);
+        return `
+          <div class="flex items-center justify-between p-3 rounded-2xl bg-alabaster-50 border border-alabaster-200 gap-2">
+            <div class="flex items-center gap-2.5">
+              <span class="px-2 py-0.5 rounded-full text-10 font-extrabold ${isSaida ? 'bg-rose-100 text-rose-700' : 'bg-emerald-100 text-emerald-700'}">${isSaida ? 'SAÍDA' : 'ENTRADA'}</span>
+              <div>
+                <span class="font-bold text-ink-800">${escapeHtml(l.descricao)}</span>
+                <span class="text-11 text-stone-500 block">Data: ${l.data ? l.data.split('-').reverse().join('/') : '-'}</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="font-extrabold ${isSaida ? 'text-rose-600' : 'text-emerald-700'}">${isSaida ? '-' : '+'} R$ ${val.toFixed(2).replace('.', ',')}</span>
+              <button onclick="excluirLancamentoFinanceiro('${escapeHtml(l.id)}')" class="text-rose-500 font-bold cursor-pointer">✕</button>
+            </div>
+          </div>
+        `;
+      }).join('') || '<p class="text-stone-400">Nenhuma movimentação registrada neste filtro.</p>';
+    }
+
+    function renderGraficoFinanceiro(lancs, anoRef, mesIdx) {
+      const container = document.getElementById('grafico-financeiro-container');
+      const sub = document.getElementById('grafico-subtitulo');
+      if (!container) return;
+
+      let series = [];
+      if (modoGraficoAtual === 'anual') {
+        if (sub) sub.textContent = `Evolução mensal no ano de ${anoRef}`;
+        const mesesNomes = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+        series = mesesNomes.map((rotulo, mIdx) => {
+          let ent = 0, sai = 0;
+          lancs.forEach(l => {
+            const [y, m] = (l.data || '').split('-').map(Number);
+            if (y === anoRef && (m - 1) === mIdx) {
+              const val = Math.abs(Number(l.valor) || 0);
+              if (normalizarTipoLancamento(l) === 'saida') sai += val; else ent += val;
+            }
+          });
+          return { rotulo, ent, sai };
+        });
+      } else {
+        const nomeMes = new Date(anoRef, mesIdx, 1).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+        if (sub) sub.textContent = `Movimentação diária em ${nomeMes}`;
+        const diasNoMes = new Date(anoRef, mesIdx + 1, 0).getDate();
+        for (let dia = 1; dia <= diasNoMes; dia++) {
+          const alvo = `${anoRef}-${String(mesIdx + 1).padStart(2, '0')}-${String(dia).padStart(2, '0')}`;
+          let ent = 0, sai = 0;
+          lancs.forEach(l => {
+            if (l.data === alvo) {
+              const val = Math.abs(Number(l.valor) || 0);
+              if (normalizarTipoLancamento(l) === 'saida') sai += val; else ent += val;
+            }
+          });
+          series.push({ rotulo: String(dia).padStart(2, '0'), ent, sai });
+        }
+      }
+
+      const maxVal = Math.max(100, ...series.map(s => Math.max(s.ent, s.sai)));
+      const barWidth = modoGraficoAtual === 'anual' ? 16 : 9;
+      const gap = modoGraficoAtual === 'anual' ? 24 : 11;
+      const startX = 40;
+      const chartHeight = 155;
+      const topPad = 18;
+      const baseY = topPad + chartHeight;
+      const width = Math.max(540, startX + series.length * (barWidth * 2 + gap) + 20);
+      const height = baseY + 28;
+
+      let gridSvg = '';
+      for (let i = 0; i <= 3; i++) {
+        const ratio = i / 3;
+        const y = baseY - ratio * chartHeight;
+        gridSvg += `<line x1="${startX - 6}" y1="${y}" x2="${width - 10}" y2="${y}" stroke="#E7DFD2" stroke-dasharray="3,3" stroke-width="1" />`;
+        gridSvg += `<text x="${startX - 10}" y="${y + 3}" text-anchor="end" font-size="9" fill="#78716c">${Math.round(maxVal * ratio)}</text>`;
+      }
+
+      const barsSvg = series.map((s, idx) => {
+        const xBase = startX + idx * (barWidth * 2 + gap);
+        const hEnt = (s.ent / maxVal) * chartHeight;
+        const hSai = (s.sai / maxVal) * chartHeight;
+        const yEnt = baseY - hEnt;
+        const ySai = baseY - hSai;
+        const showLabel = modoGraficoAtual === 'anual' || (idx + 1) % 2 === 1 || idx === series.length - 1;
+        return `
+          <g>
+            <rect x="${xBase}" y="${yEnt}" width="${barWidth}" height="${hEnt}" rx="3" fill="#059669"><title>${s.rotulo} - Entradas: R$ ${s.ent.toFixed(2)}</title></rect>
+            <rect x="${xBase + barWidth + 2}" y="${ySai}" width="${barWidth}" height="${hSai}" rx="3" fill="#e11d48"><title>${s.rotulo} - Saídas: R$ ${s.sai.toFixed(2)}</title></rect>
+            ${showLabel ? `<text x="${xBase + barWidth}" y="${baseY + 14}" text-anchor="middle" font-size="9" fill="#44403c" font-weight="600">${s.rotulo}</text>` : ''}
+          </g>
+        `;
+      }).join('');
+
+      container.innerHTML = `<svg viewBox="0 0 ${width} ${height}" class="w-full min-w-graf h-auto">${gridSvg}<line x1="${startX - 6}" y1="${baseY}" x2="${width - 10}" y2="${baseY}" stroke="#a8a29e" stroke-width="1.2" />${barsSvg}</svg>`;
+    }
+
+    function abrirModalLancamentoFinanceiro() {
+      const mesAtual = document.getElementById('fin-mes-ref')?.value;
+      const hoje = hojeIso();
+      const dataPadrao = (mesAtual && hoje.startsWith(mesAtual)) ? hoje : `${mesAtual || hoje.slice(0, 7)}-01`;
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">Novo Lançamento Manual (Entrada / Saída)</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div class="grid grid-cols-2 gap-2">
+            <div>
+              <label class="block font-bold text-stone-600 mb-1">Tipo de Movimentação</label>
+              <select id="fin-tipo" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-bold">
+                <option value="entrada">Entrada (+)</option>
+                <option value="saida">Saída (-)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-bold text-stone-600 mb-1">Valor (R$)</label>
+              <input type="number" step="0.01" id="fin-val" value="180.00" class="w-full p-2.5 rounded-xl border border-alabaster-200 font-bold text-ink-800">
+            </div>
+          </div>
+          <div><label class="block font-bold text-stone-600 mb-1">Descrição</label><input type="text" id="fin-desc" class="w-full p-2.5 rounded-xl border border-alabaster-200" placeholder="Ex: Sessão Avulsa ou Material Clínico"></div>
+          <div><label class="block font-bold text-stone-600 mb-1">Data</label><input type="date" id="fin-data" value="${dataPadrao}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+          <div class="flex justify-end gap-2 pt-3 border-t border-alabaster-200">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="salvarLancamentoManual()" class="px-5 py-2 bg-sage-600 text-white rounded-xl font-bold cursor-pointer">Salvar Lançamento</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function salvarLancamentoManual() {
+      const tipo = document.getElementById('fin-tipo').value;
+      const desc = (document.getElementById('fin-desc')?.value || '').trim();
+      const val = Math.abs(parseFloat(document.getElementById('fin-val').value) || 0);
+      const dataLanc = document.getElementById('fin-data').value || hojeIso();
+      if (!desc || val <= 0) { toast('⚠️ Preencha descrição e valor válido.'); return; }
+      db.contabilidade.lancamentos.push({ id: 'L' + Date.now(), tipo, data: dataLanc, descricao: desc, valor: val });
+      if (dataLanc.slice(0, 7) !== document.getElementById('fin-mes-ref').value) {
+        document.getElementById('fin-mes-ref').value = dataLanc.slice(0, 7);
+      }
+      salvar(); fecharModal(); renderFinanceiro();
+    }
+
+    function excluirLancamentoFinanceiro(id) {
+      db.contabilidade.lancamentos = db.contabilidade.lancamentos.filter(l => l.id !== id);
+      salvar('🗑️ Lançamento removido.'); renderFinanceiro();
+    }
+
+    function alternarStatusCaixa() {
+      db.contabilidade.caixaStatus = db.contabilidade.caixaStatus === 'Aberto' ? 'Fechado' : 'Aberto';
+      salvar(`Caixa ${db.contabilidade.caixaStatus.toLowerCase()}.`); renderFinanceiro();
+    }
+
+    // --- SINCRONIZAÇÃO DE ENTRADA NO CAIXA AO ATIVAR / INATIVAR CLIENTE ---
+    function sincronizarEntradaCaixaCliente(pac, ativarNaCaixa) {
+      if (!pac) return;
+      const nomeServico = pac.servicoNome || 'Atendimento';
+      const valorSessao = Number(pac.valorSessao) || 0;
+
+      if (ativarNaCaixa && valorSessao > 0) {
+        const descricaoLanc = `Cadastro/Atendimento: ${pac.nome} (${nomeServico})`;
+        const idxLanc = pac.lancamentoId ? db.contabilidade.lancamentos.findIndex(l => l.id === pac.lancamentoId) : -1;
+        if (idxLanc !== -1) {
+          db.contabilidade.lancamentos[idxLanc].descricao = descricaoLanc;
+          db.contabilidade.lancamentos[idxLanc].valor = valorSessao;
+          db.contabilidade.lancamentos[idxLanc].tipo = 'entrada';
+        } else {
+          const novoId = 'L' + Date.now() + '_' + Math.floor(Math.random() * 1000);
+          pac.lancamentoId = novoId;
+          db.contabilidade.lancamentos.push({ id: novoId, tipo: 'entrada', data: hojeIso(), descricao: descricaoLanc, valor: valorSessao });
+        }
+        pac.somadoNoCaixa = true;
+      } else if (!ativarNaCaixa && pac.lancamentoId) {
+        db.contabilidade.lancamentos = db.contabilidade.lancamentos.filter(l => l.id !== pac.lancamentoId);
+        pac.lancamentoId = null;
+      }
+    }
+
+    function aplicarServicoCatalogoNoCadastro() {
+      const sid = document.getElementById('m-servico')?.value;
+      const prod = db.produtos.find(p => p.id === sid);
+      if (prod) {
+        if (document.getElementById('m-servico-nome')) document.getElementById('m-servico-nome').value = prod.nome;
+        if (document.getElementById('m-valorsessao')) document.getElementById('m-valorsessao').value = prod.valor;
+      }
+    }
+
+    function abrirModalCliente(id = null) {
+      ultimoCepConsultado = '';
+      const c = id ? (db.pacientes.find(p => p.id === id) || {}) : {
+        status: 'Ativo', endereco: {}, extras: {}, credito: {},
+        servicoId: db.produtos[0]?.id || '',
+        servicoNome: db.produtos[0]?.nome || 'Sessão Individual TCC',
+        valorSessao: db.produtos[0]?.valor || 180,
+        somadoNoCaixa: true
+      };
+
+      const opcoesServicos = db.produtos.map(p => `<option value="${escapeHtml(p.id)}" ${c.servicoId===p.id?'selected':''}>${escapeHtml(p.nome)} (R$ ${Number(p.valor || 0).toFixed(2)})</option>`).join('');
+      const checkedSomar = c.somadoNoCaixa !== undefined ? c.somadoNoCaixa : true;
+      const statusAtual = c.status === 'Inativo' ? 'Inativo' : 'Ativo';
+      const profissaoAtual = c.extras?.profissao ?? '';
+
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">${id ? 'Editar Cadastro Completo' : 'Novo Cadastro de Cliente'}</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-4 text-xs max-h-70vh overflow-y-auto p-1">
+          <div>
+            <h4 class="font-bold text-sage-700 mb-2 m-0">📌 1. Geral, Status & Serviço/Pacote Contratado</h4>
+            <div class="space-y-2">
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+                <div class="sm:col-span-2"><label class="block font-semibold text-stone-600 mb-1">Nome Completo</label><input type="text" id="m-nome" value="${escapeHtml(c.nome || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+                <div><label class="block font-semibold text-stone-600 mb-1">Status do Cliente</label><select id="m-status" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white font-bold"><option value="Ativo" ${statusAtual==='Ativo'?'selected':''}>Ativo</option><option value="Inativo" ${statusAtual==='Inativo'?'selected':''}>Inativo</option></select></div>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <div><label class="block font-semibold text-stone-600 mb-1">WhatsApp</label><input type="text" id="m-wap" value="${escapeHtml(c.wap || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+                <div><label class="block font-semibold text-stone-600 mb-1">E-mail</label><input type="text" id="m-email" value="${escapeHtml(c.email || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <div><label class="block font-semibold text-stone-600 mb-1">Convênio</label><input type="text" id="m-convenio" value="${escapeHtml(c.convenio || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+                <div><label class="block font-semibold text-stone-600 mb-1">Carteirinha</label><input type="text" id="m-carteirinha" value="${escapeHtml(c.carteirinha || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-emerald-50 border border-emerald-200 space-y-2.5 mt-2">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  <div>
+                    <label class="block font-bold text-emerald-900 mb-1">Modelo do Catálogo (Preencher)</label>
+                    <select id="m-servico" onchange="aplicarServicoCatalogoNoCadastro()" class="w-full p-2 rounded-xl border border-emerald-200 bg-white font-semibold">${opcoesServicos}</select>
+                  </div>
+                  <div>
+                    <label class="block font-bold text-emerald-900 mb-1">Serviço / Pacote Contratado (Editável)</label>
+                    <input type="text" id="m-servico-nome" value="${escapeHtml(c.servicoNome || '')}" class="w-full p-2 rounded-xl border border-emerald-200 bg-white font-semibold">
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 items-center">
+                  <div>
+                    <label class="block font-bold text-emerald-900 mb-1">Valor a Somar no Caixa (R$)</label>
+                    <input type="number" step="0.01" id="m-valorsessao" value="${Number(c.valorSessao ?? 180)}" class="w-full p-2 rounded-xl border border-emerald-200 bg-white font-bold text-emerald-700">
+                  </div>
+                  <label class="flex items-center gap-2 font-bold text-emerald-900 cursor-pointer pt-4">
+                    <input type="checkbox" id="m-somar-caixa" ${checkedSomar ? 'checked' : ''} class="rounded-checkbox">
+                    <span>${c.lancamentoId ? 'Atualizar soma no Financeiro & Caixa' : 'Somar em Financeiro & Caixa ao salvar'}</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-alabaster-200 pt-3">
+            <h4 class="font-bold text-sage-700 mb-2 m-0">🏠 2. Endereço (Busca Automática por CEP)</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              <div>
+                <label class="block font-semibold text-stone-600 mb-1">CEP (preenche automático)</label>
+                <div class="flex gap-1.5">
+                  <input type="text" id="m-cep" maxlength="9" value="${escapeHtml(c.endereco?.cep || '')}" oninput="buscarEnderecoPorCep()" onblur="buscarEnderecoPorCep()" class="w-full p-2.5 rounded-xl border border-alabaster-200" placeholder="00000-000">
+                  <button type="button" onclick="buscarEnderecoPorCep(true)" class="px-3 rounded-xl bg-sage-50 border border-sage-200 text-sage-700 font-bold cursor-pointer shrink-0">🔍</button>
+                </div>
+                <p id="cep-status" class="text-11 text-stone-400 mt-1"></p>
+              </div>
+              <div>
+                <label class="block font-semibold text-stone-600 mb-1">Logradouro / Rua</label>
+                <input type="text" id="m-logradouro" value="${escapeHtml(c.endereco?.logradouro || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200">
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mt-2">
+              <div><label class="block font-semibold text-stone-600 mb-1">Número</label><input type="text" id="m-numero" value="${escapeHtml(c.endereco?.numero || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+              <div><label class="block font-semibold text-stone-600 mb-1">Bairro</label><input type="text" id="m-bairro" value="${escapeHtml(c.endereco?.bairro || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+              <div><label class="block font-semibold text-stone-600 mb-1">Cidade / UF</label><input type="text" id="m-cidade" value="${escapeHtml(c.endereco?.cidade || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            </div>
+          </div>
+
+          <div class="border-t border-alabaster-200 pt-3">
+            <h4 class="font-bold text-sage-700 mb-2 m-0">⭐ 3. Extras & Crédito</h4>
+            <div class="grid grid-cols-2 gap-2">
+              <div><label class="block font-semibold text-stone-600 mb-1">Profissão</label><input type="text" id="m-profissao" value="${escapeHtml(profissaoAtual)}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+              <div><label class="block font-semibold text-stone-600 mb-1">Indicação</label><input type="text" id="m-indicacao" value="${escapeHtml(c.extras?.indicacao || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            </div>
+            <div class="mt-2"><label class="block font-semibold text-stone-600 mb-1">Observações Extras</label><input type="text" id="m-obs" value="${escapeHtml(c.extras?.observacoes || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            <div class="grid grid-cols-2 gap-2 mt-2">
+              <div><label class="block font-semibold text-stone-600 mb-1">Saldo em Crédito (R$)</label><input type="number" id="m-saldo" value="${Number(c.credito?.saldo || 0)}" class="w-full p-2.5 rounded-xl border border-alabaster-200 font-bold text-emerald-700"></div>
+              <div><label class="block font-semibold text-stone-600 mb-1">Histórico de Crédito</label><input type="text" id="m-histcredito" value="${escapeHtml(c.credito?.historico || '')}" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            </div>
+          </div>
+
+          <div class="flex justify-end gap-2 pt-3 border-t border-alabaster-200">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="salvarModalClienteCompleto('${escapeHtml(id || '')}')" class="px-5 py-2 bg-sage-600 text-white rounded-xl font-bold cursor-pointer">Salvar Cadastro & Caixa</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function salvarModalClienteCompleto(id) {
+      const nomeVal = (document.getElementById('m-nome')?.value || '').trim();
+      if (!nomeVal) { toast('⚠️ O nome do cliente é obrigatório.'); return; }
+
+      const anterior = id ? db.pacientes.find(x => x.id === id) : null;
+      const statusVal = document.getElementById('m-status')?.value === 'Inativo' ? 'Inativo' : 'Ativo';
+      const servicoId = document.getElementById('m-servico')?.value;
+      const servicoObj = db.produtos.find(p => p.id === servicoId);
+      const servicoNomeDigitado = (document.getElementById('m-servico-nome')?.value || '').trim();
+      const nomeServico = servicoNomeDigitado || (servicoObj ? servicoObj.nome : 'Atendimento');
+      const valorSessao = Math.max(0, parseFloat(document.getElementById('m-valorsessao')?.value) || 0);
+      const somarCaixa = Boolean(document.getElementById('m-somar-caixa')?.checked);
+      const vendaHistorico = anterior?.venda ? anterior.venda.slice() : [];
+
+      const dados = {
+        id: id || Date.now().toString(),
+        nome: nomeVal,
+        wap: document.getElementById('m-wap').value,
+        email: document.getElementById('m-email').value,
+        convenio: document.getElementById('m-convenio').value,
+        carteirinha: document.getElementById('m-carteirinha').value,
+        servicoId,
+        servicoNome: nomeServico,
+        valorSessao,
+        lancamentoId: anterior?.lancamentoId || null,
+        somadoNoCaixa: somarCaixa,
+        status: statusVal,
+        endereco: {
+          cep: document.getElementById('m-cep').value,
+          logradouro: document.getElementById('m-logradouro').value,
+          numero: document.getElementById('m-numero').value,
+          bairro: document.getElementById('m-bairro').value,
+          cidade: document.getElementById('m-cidade').value
+        },
+        extras: {
+          profissao: document.getElementById('m-profissao').value,
+          indicacao: document.getElementById('m-indicacao').value,
+          observacoes: document.getElementById('m-obs').value
+        },
+        credito: {
+          saldo: parseFloat(document.getElementById('m-saldo').value) || 0,
+          historico: document.getElementById('m-histcredito').value
+        },
+        linhaTempo: anterior?.linhaTempo || [`${new Date().toLocaleDateString('pt-BR')} - Cadastro criado no sistema.`],
+        anamnese: anterior?.anamnese || '',
+        contrato: anterior?.contrato || '',
+        anexos: anterior?.anexos || [],
+        venda: vendaHistorico,
+        historicoAgendamento: anterior?.historicoAgendamento || []
+      };
+
+      const deveSomar = statusVal === 'Ativo' && somarCaixa && valorSessao > 0;
+      sincronizarEntradaCaixaCliente(dados, deveSomar);
+
+      if (deveSomar) {
+        const registroVenda = `${nomeServico} - R$ ${valorSessao.toFixed(2)} (${new Date().toLocaleDateString('pt-BR')})`;
+        if (!dados.venda.includes(registroVenda)) dados.venda.push(registroVenda);
+      }
+
+      if (id) {
+        const idx = db.pacientes.findIndex(p => p.id === id);
+        if (idx !== -1) db.pacientes[idx] = dados;
+      } else {
+        db.pacientes.push(dados);
+      }
+
+      salvar();
+      fecharModal();
+      mudarAba('clientes');
+      if (deveSomar) toast(`💰 Caixa atualizado: ${nomeServico} (R$ ${valorSessao.toFixed(2)})`);
+    }
+
+    let filtroStatusCliente = 'todos';
+    let confirmacaoPendente = null;
+
+    function mudarFiltroStatusCliente(status) {
+      filtroStatusCliente = status;
+      ['todos', 'Ativo', 'Inativo'].forEach(st => {
+        const btn = document.getElementById('filtro-cli-' + st);
+        if (btn) btn.className = st === status ? 'px-2.5 py-1 rounded-lg bg-sage-600 text-white cursor-pointer' : 'px-2.5 py-1 rounded-lg text-stone-700 cursor-pointer';
+      });
+      renderClientes();
+    }
+
+    function alternarStatusCliente(id) {
+      const pac = db.pacientes.find(p => p.id === id);
+      if (!pac) return;
+      const vaiAtivar = pac.status === 'Inativo';
+      pac.status = vaiAtivar ? 'Ativo' : 'Inativo';
+      let msgCaixa = '';
+      if (vaiAtivar) {
+        const valor = Number(pac.valorSessao) || 0;
+        if (valor > 0 && pac.somadoNoCaixa !== false) {
+          sincronizarEntradaCaixaCliente(pac, true);
+          msgCaixa = ` • Entrada de R$ ${valor.toFixed(2).replace('.', ',')} reativada no caixa`;
+        }
+      }
+      salvar(`Cliente marcado como ${pac.status}!${msgCaixa}`);
+      renderClientes();
+    }
+
+    function excluirCliente(id) {
+      const pac = db.pacientes.find(p => p.id === id);
+      if (!pac) return;
+      confirmacaoPendente = () => {
+        if (pac.lancamentoId && db.contabilidade?.lancamentos) {
+          db.contabilidade.lancamentos = db.contabilidade.lancamentos.filter(l => l.id !== pac.lancamentoId);
+        }
+        db.pacientes = db.pacientes.filter(p => p.id !== id);
+        if (clienteAtualId === id) clienteAtualId = null;
+        salvar('🗑️ Cliente excluído com sucesso!');
+        renderClientes();
+      };
+      abrirModal(`
+        <div class="space-y-4 text-xs">
+          <h3 class="text-lg font-bold text-ink-800 m-0">Confirmar Exclusão</h3>
+          <p class="text-stone-600 m-0">Deseja realmente excluir o cadastro de <strong>${escapeHtml(pac.nome)}</strong> e seu lançamento vinculado no caixa?</p>
+          <div class="flex justify-end gap-2 pt-3 border-t border-alabaster-200">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="executarConfirmacaoPendente()" class="px-5 py-2 bg-rose-600 text-white rounded-xl font-bold cursor-pointer">Excluir Definitivamente</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function executarConfirmacaoPendente() {
+      const fn = confirmacaoPendente;
+      confirmacaoPendente = null;
+      fecharModal();
+      if (typeof fn === 'function') fn();
+    }
+
+    function renderClientes() {
+      const termoBusca = (document.getElementById('busca-cliente')?.value || '').trim().toLowerCase();
+      const lista = db.pacientes.filter(p => {
+        const st = p.status === 'Inativo' ? 'Inativo' : 'Ativo';
+        if (filtroStatusCliente !== 'todos' && st !== filtroStatusCliente) return false;
+        if (!termoBusca) return true;
+        return (p.nome || '').toLowerCase().includes(termoBusca)
+          || (p.convenio || '').toLowerCase().includes(termoBusca)
+          || (p.servicoNome || '').toLowerCase().includes(termoBusca);
+      });
+
+      document.getElementById('lista-pacientes-grid').innerHTML = lista.map(p => {
+        const isInativo = p.status === 'Inativo';
+        const statusLabel = isInativo ? 'Inativo' : 'Ativo';
+        const badgeClass = isInativo ? 'bg-rose-100 text-rose-700' : 'bg-emerald-100 text-emerald-800';
+        return `
+          <div class="bg-white rounded-3xl p-5 border border-alabaster-200 shadow-card space-y-3 text-xs">
+            <div class="flex justify-between items-start gap-2">
+              <div>
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-bold text-base text-ink-800">${escapeHtml(p.nome)}</span>
+                  <span class="px-2 py-0.5 rounded-full font-extrabold text-10 ${badgeClass}">${statusLabel}</span>
+                </div>
+                <p class="text-11 text-sage-700 font-semibold m-0 mt-0.5">${escapeHtml(p.servicoNome || 'Serviço não definido')}</p>
+              </div>
+              <span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-bold text-10 shrink-0">R$ ${Number(p.valorSessao || 0).toFixed(2)}</span>
+            </div>
+            <p class="text-stone-600 m-0">📱 WhatsApp: ${escapeHtml(p.wap || '-')} | 🏥 Convênio: ${escapeHtml(p.convenio || '-')} (${escapeHtml(p.carteirinha || '-')})</p>
+            ${p.endereco?.logradouro ? `<p class="text-stone-500 m-0">📍 ${escapeHtml(p.endereco.logradouro)}${p.endereco.numero ? ', ' + escapeHtml(p.endereco.numero) : ''} - ${escapeHtml(p.endereco.bairro || '')} ${p.endereco.cidade ? '(' + escapeHtml(p.endereco.cidade) + ')' : ''}</p>` : ''}
+            <div class="flex flex-wrap gap-2 pt-2 border-t border-alabaster-100">
+              <button onclick="abrirDetalhesCliente('${escapeHtml(p.id)}')" class="flex-1 py-2 px-3 bg-sage-600 text-white rounded-xl font-bold cursor-pointer">📂 Ficha</button>
+              <button onclick="abrirModalCliente('${escapeHtml(p.id)}')" class="py-2 px-3 bg-alabaster-100 text-stone-700 rounded-xl font-bold cursor-pointer">✏️ Editar</button>
+              <button onclick="alternarStatusCliente('${escapeHtml(p.id)}')" class="py-2 px-3 rounded-xl font-bold cursor-pointer ${isInativo ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-amber-100 text-amber-800'}">${isInativo ? '✓ Ativar' : '⏸ Inativar'}</button>
+              <button onclick="excluirCliente('${escapeHtml(p.id)}')" class="py-2 px-3 bg-rose-50 text-rose-600 rounded-xl font-bold cursor-pointer">🗑️ Excluir</button>
+            </div>
+          </div>
+        `;
+      }).join('') || '<p class="text-xs text-stone-400">Nenhum cliente encontrado com esse filtro ou nome.</p>';
+    }
+
+    let clienteAtualId = null;
+    let subAbaAtual = 'linha';
+
+    function abrirDetalhesCliente(id) {
+      clienteAtualId = id;
+      mudarAba('detalhe-cliente');
+      mudarSubAbaCliente('linha');
+    }
+
+    function mudarSubAbaCliente(sub) {
+      subAbaAtual = sub;
+      ['linha', 'anamnese', 'contrato', 'anexos', 'venda', 'agendamento'].forEach(s => {
+        const btn = document.getElementById('subtab-' + s);
+        if (btn) btn.className = s === sub ? "px-3.5 py-2 rounded-xl text-xs font-bold bg-sage-600 text-white cursor-pointer" : "px-3.5 py-2 rounded-xl text-xs font-bold bg-alabaster-100 text-stone-700 cursor-pointer";
+      });
+
+      const p = db.pacientes.find(x => x.id === clienteAtualId);
+      if (!p) return;
+
+      document.getElementById('detalhe-nome-cliente').textContent = p.nome;
+      document.getElementById('detalhe-sub-cliente').textContent = `Status: ${p.status || 'Ativo'} | Convênio: ${p.convenio || '-'} | WhatsApp: ${p.wap || '-'}`;
+
+      const container = document.getElementById('conteudo-sub-cliente');
+      if (sub === 'linha') {
+        container.innerHTML = `<div class="space-y-3"><h3 class="font-bold text-sm text-ink-800 m-0">Linha do Tempo Terapêutica</h3><textarea id="input-edit-linha" rows="5" class="w-full p-3 rounded-2xl border border-alabaster-200">${escapeHtml(p.linhaTempo ? p.linhaTempo.join('\n') : '')}</textarea></div>`;
+      } else if (sub === 'anamnese') {
+        container.innerHTML = `<div class="space-y-3"><h3 class="font-bold text-sm text-ink-800 m-0">Anamnese & Ficha Clínica</h3><textarea id="input-edit-anamnese" rows="6" class="w-full p-3 rounded-2xl border border-alabaster-200">${escapeHtml(p.anamnese || '')}</textarea></div>`;
+      } else if (sub === 'contrato') {
+        container.innerHTML = `<div class="space-y-3"><h3 class="font-bold text-sm text-ink-800 m-0">Contrato de Prestação & Orçamento</h3><textarea id="input-edit-contrato" rows="6" class="w-full p-3 rounded-2xl border border-alabaster-200">${escapeHtml(p.contrato || '')}</textarea></div>`;
+      } else if (sub === 'anexos') {
+        const listaAnexos = p.anexos && p.anexos.length > 0 ? p.anexos.map((arq, idx) => `
+          <div class="flex items-center justify-between p-2.5 bg-alabaster-50 rounded-xl border border-alabaster-200">
+            <span class="font-semibold text-stone-700">📎 ${escapeHtml(arq)}</span>
+            <button onclick="removerAnexoCliente(${idx})" class="text-rose-600 font-bold text-xs cursor-pointer">Excluir</button>
+          </div>`).join('') : '<p class="text-stone-400">Nenhum arquivo anexado ainda.</p>';
+
+        container.innerHTML = `
+          <div class="space-y-4">
+            <h3 class="font-bold text-sm text-ink-800 m-0">Documentos & Anexos (PDFs / Exames)</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <label class="p-3 bg-sage-50 border border-sage-200 rounded-2xl text-center font-bold text-sage-700 cursor-pointer block">
+                📁 Enviar Arquivo Local
+                <input type="file" id="up-local" class="hidden" onchange="processarUploadArquivo(event, 'local')">
+              </label>
+              <label class="p-3 bg-alabaster-100 border border-alabaster-200 rounded-2xl text-center font-bold text-stone-700 cursor-pointer block">
+                📤 Mais Uploads (Outros)
+                <input type="file" id="up-outros" class="hidden" onchange="processarUploadArquivo(event, 'outro')">
+              </label>
+            </div>
+            <div class="space-y-2 pt-2">
+              <h4 class="font-bold text-xs text-stone-600 m-0">Arquivos Vinculados:</h4>
+              <div class="space-y-1.5">${listaAnexos}</div>
+            </div>
+          </div>`;
+      } else if (sub === 'venda') {
+        container.innerHTML = `<div class="space-y-3"><h3 class="font-bold text-sm text-ink-800 m-0">Vendas & Pacotes Contratados</h3><textarea id="input-edit-venda" rows="4" class="w-full p-3 rounded-2xl border border-alabaster-200">${escapeHtml(p.venda ? p.venda.join('\n') : '')}</textarea></div>`;
+      } else if (sub === 'agendamento') {
+        container.innerHTML = `<div class="space-y-3"><h3 class="font-bold text-sm text-ink-800 m-0">Histórico de Agendamento</h3><textarea id="input-edit-agendamento" rows="4" class="w-full p-3 rounded-2xl border border-alabaster-200">${escapeHtml(p.historicoAgendamento ? p.historicoAgendamento.join('\n') : '')}</textarea></div>`;
+      }
+    }
+
+    function processarUploadArquivo(event, tipo) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const p = db.pacientes.find(x => x.id === clienteAtualId);
+      if (p) {
+        if (!p.anexos) p.anexos = [];
+        p.anexos.push(`${file.name} (${tipo === 'local' ? 'Local' : 'Upload'})`);
+        salvar();
+        mudarSubAbaCliente('anexos');
+      }
+    }
+
+    function removerAnexoCliente(idx) {
+      const p = db.pacientes.find(x => x.id === clienteAtualId);
+      if (p && p.anexos) {
+        p.anexos.splice(idx, 1);
+        salvar('📎 Anexo removido.');
+        mudarSubAbaCliente('anexos');
+      }
+    }
+
+    function salvarAlteracoesClienteAtual() {
+      const p = db.pacientes.find(x => x.id === clienteAtualId);
+      if (!p) return;
+      if (subAbaAtual === 'linha') p.linhaTempo = document.getElementById('input-edit-linha').value.split('\n').filter(Boolean);
+      else if (subAbaAtual === 'anamnese') p.anamnese = document.getElementById('input-edit-anamnese').value;
+      else if (subAbaAtual === 'contrato') p.contrato = document.getElementById('input-edit-contrato').value;
+      else if (subAbaAtual === 'venda') p.venda = document.getElementById('input-edit-venda').value.split('\n').filter(Boolean);
+      else if (subAbaAtual === 'agendamento') p.historicoAgendamento = document.getElementById('input-edit-agendamento').value.split('\n').filter(Boolean);
+      salvar();
+    }
+
+    function abrirModalBackupGeral() {
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">☁️ Central de Exportação & Backup</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <button onclick="fazerBackupJson(); fecharModal();" class="w-full py-3.5 bg-sage-600 text-white rounded-xl font-bold cursor-pointer">💾 Baixar Backup Completo (.json)</button>
+          <label class="w-full py-3.5 bg-alabaster-100 text-ink-800 border border-alabaster-200 rounded-xl font-bold cursor-pointer block text-center">
+            📥 Importar Backup (.json) neste Aparelho
+            <input type="file" id="input-importar-json" accept=".json,application/json" onchange="importarBackupJson(event)" class="hidden">
+          </label>
+          <button onclick="exportarTodosPacientesExcel(); fecharModal();" class="w-full py-3 bg-emerald-600 text-white rounded-xl font-bold cursor-pointer">📊 Exportar Planilha Geral (Excel / CSV)</button>
+          <button onclick="exportarTodosPacientesWord(); fecharModal();" class="w-full py-3 bg-champagne-500 text-white rounded-xl font-bold cursor-pointer">📄 Exportar Relatório Geral (Microsoft Word .doc)</button>
+          <button onclick="window.print(); fecharModal();" class="w-full py-2.5 bg-alabaster-50 text-stone-700 border border-alabaster-200 rounded-xl font-bold cursor-pointer">🖨️ Imprimir / Salvar como PDF</button>
+        </div>
+      `);
+    }
+
+    function importarBackupJson(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const dadosImportados = JSON.parse(e.target.result);
+          if (!dadosImportados || typeof dadosImportados !== 'object' || !Array.isArray(dadosImportados.pacientes)) {
+            toast('⚠️ Arquivo de backup inválido.');
+            return;
+          }
+          db = {
+            pacientes: dadosImportados.pacientes || [],
+            produtos: Array.isArray(dadosImportados.produtos) ? dadosImportados.produtos : [],
+            agenda: Array.isArray(dadosImportados.agenda) ? dadosImportados.agenda : [],
+            agendaConfig: { horaInicio: '09:00', horaFim: '17:00', intervaloMin: 40, ...(dadosImportados.agendaConfig || {}) },
+            automacaoConfig: { ...DEFAULT_AUTOMACAO, ...(dadosImportados.automacaoConfig || {}) },
+            tarefas: Array.isArray(dadosImportados.tarefas) ? dadosImportados.tarefas : [],
+            contabilidade: {
+              caixaStatus: dadosImportados.contabilidade?.caixaStatus || 'Aberto',
+              lancamentos: Array.isArray(dadosImportados.contabilidade?.lancamentos) ? dadosImportados.lancamentos : []
+            }
+          };
+          salvar('📥 Backup restaurado com sucesso!');
+          fecharModal();
+          mudarAba('dashboard');
+        } catch (err) {
+          toast('⚠️ Não foi possível ler o arquivo .json.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function fazerBackupJson() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(db, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute("href", dataStr);
+      a.setAttribute("download", `Backup_AnaSena_${hojeIso()}.json`);
+      document.body.appendChild(a); a.click(); a.remove();
+      toast('💾 Backup .json baixado!');
+    }
+
+    function exportarTodosPacientesExcel() {
+      let csv = '\uFEFFNome;Status;WhatsApp;Convênio;Serviço Contratado;Valor Sessão (R$);Anamnese\n';
+      db.pacientes.forEach(p => {
+        csv += `"${(p.nome || '').replace(/"/g, '""')}";"${p.status || 'Ativo'}";"${p.wap || ''}";"${p.convenio || ''}";"${p.servicoNome || ''}";"${p.valorSessao || 0}";"${(p.anamnese || '').replace(/[\r\n;]+/g, ' ')}"\n`;
+      });
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `Pacientes_AnaSena.csv`; a.click();
+    }
+
+    function exportarTodosPacientesWord() {
+      const linhas = db.pacientes.map(p => `<p><strong>${escapeHtml(p.nome)}</strong> (${escapeHtml(p.status || 'Ativo')}) - ${escapeHtml(p.convenio || '')} - ${escapeHtml(p.anamnese || '')}</p>`).join('');
+      const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"></head><body><h2>Ana Sena Psicologia &bull; CRP 05/61.450 (RT) &bull; CRP PJ 05/03324</h2>${linhas}</body></html>`;
+      const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `Relatorio_AnaSena.doc`; a.click();
+    }
+
+    function renderArquivoSecreto() {
+      document.getElementById('lista-arquivo-secreto').innerHTML = db.pacientes.map(p => `
+        <div class="bg-white rounded-3xl p-6 border border-alabaster-200 shadow-card space-y-3">
+          <div class="flex flex-wrap justify-between items-center border-b border-alabaster-200 pb-3 gap-2">
+            <div>
+              <h3 class="font-serif text-lg font-bold text-ink-800 m-0">${escapeHtml(p.nome)}</h3>
+              <p class="text-xs text-stone-500 mt-1">Status: <strong>${escapeHtml(p.status || 'Ativo')}</strong> | Convênio: <strong>${escapeHtml(p.convenio || '-')}</strong> | WhatsApp: ${escapeHtml(p.wap || '-')}</p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button onclick="exportarIndividualExcel('${escapeHtml(p.id)}')" class="px-3 py-2 bg-emerald-600 text-white rounded-xl font-bold text-xs cursor-pointer">📊 Excel (.csv)</button>
+              <button onclick="baixarBackupIndividualWord('${escapeHtml(p.id)}')" class="px-3 py-2 bg-champagne-500 text-white rounded-xl font-bold text-xs cursor-pointer">📄 Word (.doc)</button>
+              <button onclick="imprimirDossie('${escapeHtml(p.id)}')" class="px-3 py-2 bg-sage-600 text-white rounded-xl font-bold text-xs cursor-pointer">🖨️ PDF</button>
+            </div>
+          </div>
+          <p class="text-xs text-stone-700 bg-alabaster-50 p-3 rounded-xl m-0"><strong>Anamnese / Histórico:</strong> ${escapeHtml(p.anamnese || 'Nenhuma anamnese registrada.')}</p>
+        </div>
+      `).join('');
+    }
+
+    function exportarIndividualExcel(id) {
+      const p = db.pacientes.find(x => x.id === id);
+      if (!p) return;
+      const csv = `\uFEFFCampo;Informação\n"Nome";"${p.nome}"\n"Status";"${p.status || 'Ativo'}"\n"WhatsApp";"${p.wap || ''}"\n"Convênio";"${p.convenio || ''}"\n"Anamnese";"${(p.anamnese || '').replace(/[\r\n;]+/g, ' ')}"\n`;
+      const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `Ficha_${(p.nome || 'paciente').replace(/\s+/g, '_')}.csv`; a.click();
+    }
+
+    function baixarBackupIndividualWord(id) {
+      const p = db.pacientes.find(x => x.id === id);
+      if (!p) return;
+      const html = `<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"></head><body><h2>Ana Sena Psicologia &bull; CRP 05/61.450 (RT) &bull; CRP PJ 05/03324</h2><h3>Prontuário: ${escapeHtml(p.nome)}</h3><p>${escapeHtml(p.anamnese || '')}</p></body></html>`;
+      const blob = new Blob(['\ufeff' + html], { type: 'application/msword' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `Prontuario_${(p.nome || 'paciente').replace(/\s+/g, '_')}.doc`; a.click();
+    }
+
+    function imprimirDossie(id) {
+      const p = db.pacientes.find(x => x.id === id);
+      if (!p) return;
+      const janela = window.open('', '_blank');
+      if (!janela) { toast('⚠️ Permita pop-ups para imprimir o PDF.'); return; }
+      janela.document.write(`<html><head><title>Prontuário - ${escapeHtml(p.nome)}</title><style>@page { margin: 15mm; } body { font-family: sans-serif; padding: 20px; }</style></head><body><h2>Ana Sena Psicologia &bull; CRP 05/61.450 (RT) &bull; CRP PJ 05/03324</h2><p><strong>Paciente:</strong> ${escapeHtml(p.nome)}</p><p>${escapeHtml(p.anamnese || '')}</p><script>window.print();<\/script></body></html>`);
+      janela.document.close();
+    }
+
+    function carregarSelectsRecibo() {
+      const opts = db.pacientes.map(p => `<option value="${escapeHtml(p.id)}">${escapeHtml(p.nome)} (${escapeHtml(p.convenio || 'Particular')})</option>`).join('');
+      const elRec = document.getElementById('rec-paciente');
+      const elData = document.getElementById('rec-data');
+      if (elData && !elData.value) elData.value = hojeIso();
+      if (elRec) { elRec.innerHTML = opts; alternarCamposDocumento(); }
+    }
+
+    function alternarCamposDocumento() {
+      const tipo = document.getElementById('doc-tipo')?.value || 'recibo';
+      const campoValor = document.getElementById('campo-rec-valor');
+      const blocoTecnico = document.getElementById('campos-documento-tecnico');
+      if (campoValor) campoValor.classList.toggle('hidden', tipo !== 'recibo');
+      if (blocoTecnico) blocoTecnico.classList.toggle('hidden', tipo === 'recibo');
+      atualizarPreviewRecibo();
+    }
+
+    function atualizarPreviewRecibo() {
+      const tipo = document.getElementById('doc-tipo')?.value || 'recibo';
+      const pid = document.getElementById('rec-paciente')?.value;
+      const pac = db.pacientes.find(p => p.id === pid);
+      const val = document.getElementById('rec-valor')?.value || '180.00';
+      const dataAtend = document.getElementById('rec-data')?.value;
+      const dataFmt = dataAtend ? dataAtend.split('-').reverse().join('/') : '-';
+
+      const badge = document.getElementById('rec-badge-tipo');
+      const corpo = document.getElementById('rec-corpo-documento');
+      const assSub = document.getElementById('rec-assinatura-sub');
+
+      const crpTecnico = (document.getElementById('doc-crp-tecnico')?.value || '').trim() || 'CRP 05/61.450 (RT) • CRP PJ: 05/03324';
+      const finalidade = (document.getElementById('doc-finalidade')?.value || '').trim() || 'Finalidade técnica / institucional';
+      const conteudoTec = (document.getElementById('doc-conteudo-tecnico')?.value || '').trim();
+
+      if (assSub) {
+        assSub.textContent = `Psicóloga • ${crpTecnico} • CNPJ: 52.235.189/0001-03`;
+      }
+
+      if (tipo === 'recibo') {
+        if (badge) badge.textContent = 'Recibo Reembolso';
+        if (corpo) {
+          corpo.innerHTML = `
+            <p class="m-0"><strong>Paciente:</strong> ${escapeHtml(pac?.nome || '-')}</p>
+            <p class="m-0"><strong>Convênio / Carteirinha:</strong> ${escapeHtml(pac?.convenio || '-')} (${escapeHtml(pac?.carteirinha || 'Não informada')})</p>
+            <p class="m-0"><strong>Descrição do Procedimento:</strong> Psicoterapia individual – atendimento psicológico.</p>
+            <p class="m-0"><strong>Código TUSS:</strong> 50000470 (confirmado com a operadora)</p>
+            <p class="m-0"><strong>Responsável Técnica &amp; PJ:</strong> Dra. Ana Paula Dias Sena &bull; CRP 05/61.450 &bull; CRP PJ: 05/03324</p>
+            <p class="m-0"><strong>Valor e Data:</strong> R$ ${Number(val).toFixed(2)} — Atendimento realizado em ${dataFmt}</p>
+          `;
+        }
+        return;
+      }
+
+      const rotulos = {
+        laudo: { badge: 'Laudo Psicológico', titulo: 'LAUDO PSICOLÓGICO (CFP / CRP-05)', sujeito: 'Avaliado(a)' },
+        parecer: { badge: 'Parecer Psicológico', titulo: 'PARECER PSICOLÓGICO TÉCNICO (CFP / CRP-05)', sujeito: 'Pessoa / Caso Referenciado' },
+        pericia: { badge: 'Documento Pericial', titulo: 'DOCUMENTO / QUESITOS PERICIAIS (CFP / CRP-05)', sujeito: 'Periciando(a)' }
+      };
+      const meta = rotulos[tipo] || rotulos.laudo;
+      if (badge) badge.textContent = meta.badge;
+
+      if (corpo) {
+        corpo.innerHTML = `
+          <p class="font-bold text-sage-700 m-0">${meta.titulo}</p>
+          <p class="m-0"><strong>${meta.sujeito}:</strong> ${escapeHtml(pac?.nome || '-')}</p>
+          <p class="m-0"><strong>Finalidade / Solicitação:</strong> ${escapeHtml(finalidade)}</p>
+          <p class="m-0"><strong>Registro Técnico / Pessoa Jurídica:</strong> ${escapeHtml(crpTecnico)}</p>
+          <p class="m-0"><strong>Data de Emissão:</strong> ${dataFmt}</p>
+          <div class="p-3 rounded-xl bg-alabaster-50 border border-alabaster-200 mt-2">
+            <p class="m-0 whitespace-pre-line">${escapeHtml(conteudoTec)}</p>
+          </div>
+          <p class="text-11 text-stone-500 m-0 pt-1">Guarda documental e sigilo profissional conforme Código de Ética Profissional do Psicólogo e resoluções do CFP / CRP-05 (CRP/RJ).</p>
+        `;
+      }
+    }
+
+    // --- AGENDA: INTERVALO DE 40 MIN, HORÁRIO INICIAL/FINAL, BLOQUEIO DE OCUPADOS E COMPROMISSO PROFISSIONAL ---
+    function horaParaMinutos(hStr) {
+      const [hh, mm] = (hStr || '09:00').split(':').map(Number);
+      return hh * 60 + mm;
+    }
+
+    function gerarHorarios40Min(inicio = '09:00', fim = '17:00', intervaloMin = 40) {
+      const startTotal = horaParaMinutos(inicio);
+      const endTotal = horaParaMinutos(fim);
+      const slots = [];
+      if (endTotal < startTotal) return [inicio];
+      for (let mins = startTotal; mins <= endTotal; mins += intervaloMin) {
+        const hh = String(Math.floor(mins / 60)).padStart(2, '0');
+        const mm = String(mins % 60).padStart(2, '0');
+        slots.push(`${hh}:${mm}`);
+      }
+      return slots;
+    }
+
+    function popularSeletoresFaixaAgenda() {
+      const opcoesBase = gerarHorarios40Min('06:00', '22:00', 40);
+      const selIni = document.getElementById('agenda-hora-inicio');
+      const selFim = document.getElementById('agenda-hora-fim');
+      const atualIni = db.agendaConfig?.horaInicio || '09:00';
+      const atualFim = db.agendaConfig?.horaFim || '17:00';
+      if (selIni) selIni.innerHTML = opcoesBase.map(h => `<option value="${h}" ${h === atualIni ? 'selected' : ''}>${h}</option>`).join('');
+      if (selFim) selFim.innerHTML = opcoesBase.map(h => `<option value="${h}" ${h === atualFim ? 'selected' : ''}>${h}</option>`).join('');
+    }
+
+    function atualizarFaixaAgenda() {
+      const selIni = document.getElementById('agenda-hora-inicio');
+      const selFim = document.getElementById('agenda-hora-fim');
+      if (!selIni || !selFim) return;
+      const ini = selIni.value;
+      const fim = selFim.value;
+      if (horaParaMinutos(fim) < horaParaMinutos(ini)) {
+        toast('⚠️ O horário final não pode ser menor que o inicial.');
+        selFim.value = db.agendaConfig.horaFim || '17:00';
+        return;
+      }
+      db.agendaConfig = { horaInicio: ini, horaFim: fim, intervaloMin: 40 };
+      salvar(`⏰ Faixa da agenda ajustada: ${ini} às ${fim}`);
+      renderAgenda();
+    }
+
+    function horarioEstaOcupado(dataIso, horaStr, ignorarId = null) {
+      return db.agenda.some(a => a.data === dataIso && a.hora === horaStr && a.id !== ignorarId);
+    }
+
+    function renderAgenda() {
+      const inputData = document.getElementById('input-data-agenda');
+      if (inputData) inputData.value = dataAtual;
+      popularSeletoresFaixaAgenda();
+
+      const horaIni = db.agendaConfig?.horaInicio || '09:00';
+      const horaFim = db.agendaConfig?.horaFim || '17:00';
+      const tituloFaixa = document.getElementById('agenda-titulo-faixa');
+      if (tituloFaixa) {
+        const statusAuto = db.automacaoConfig?.autoAgendamentoAtivo ? 'Auto WhatsApp: SIM' : 'Auto WhatsApp: NÃO';
+        tituloFaixa.textContent = `2. Agenda (${horaIni} às ${horaFim} • 40 em 40 min • ${statusAuto})`;
+      }
+
+      const [y, m, d] = dataAtual.split('-').map(Number);
+      const dt = new Date(y, m - 1, d);
+      document.getElementById('agenda-mes-ano').textContent = dt.toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' });
+      document.getElementById('agenda-subdata').textContent = dt.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long' });
+
+      let strip = '';
+      for (let i = 0; i < 7; i++) {
+        const dObj = new Date(y, m - 1, d + (i - 3));
+        const iso = `${dObj.getFullYear()}-${String(dObj.getMonth()+1).padStart(2,'0')}-${String(dObj.getDate()).padStart(2,'0')}`;
+        const sel = iso === dataAtual;
+        strip += `<button onclick="mudarDataSelecionada('${iso}')" class="py-2 rounded-2xl text-center border cursor-pointer ${sel ? 'bg-sage-600 text-white border-sage-600 font-bold shadow-xs' : 'bg-alabaster-50 text-stone-700 border-alabaster-200'}"><span class="text-10 block opacity-75">${['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'][dObj.getDay()]}</span><span class="text-sm block font-bold mt-0.5">${dObj.getDate()}</span></button>`;
+      }
+      document.getElementById('semana-strip').innerHTML = strip;
+
+      const horarios = gerarHorarios40Min(horaIni, horaFim, 40);
+      const diaAppts = db.agenda.filter(a => a.data === dataAtual);
+
+      document.getElementById('linha-tempo-slots').innerHTML = horarios.map(h => {
+        const appt = diaAppts.find(a => a.hora === h);
+        if (!appt) {
+          return `
+            <div class="flex flex-wrap items-center justify-between gap-2 p-3.5 rounded-2xl border border-alabaster-200 bg-alabaster-50-soft">
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-bold text-stone-500 w-14-fixed">${h}</span>
+                <span class="text-xs text-stone-400">Horário livre (40 min)</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <button onclick="abrirModalBloqueioProfissional('${h}')" class="text-xs text-champagne-700 font-bold hover-underline cursor-pointer">🔒 Bloquear</button>
+                <button onclick="abrirModalAgendamento('${h}')" class="text-xs text-sage-600 font-bold hover-underline cursor-pointer">+ Agendar</button>
+              </div>
+            </div>
+          `;
+        }
+
+        if (appt.tipo === 'bloqueio_profissional') {
+          return `
+            <div class="flex items-center justify-between gap-2 p-4 rounded-2xl border border-champagne-200 bg-champagne-50 text-xs">
+              <div>
+                <strong>${h}</strong> &bull; <span class="font-bold text-champagne-700">🔒 Compromisso Profissional: ${escapeHtml(appt.motivo || 'Assunto particular / Médico')}</span>
+                <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 font-extrabold text-10 ml-1">Ocupado</span>
+              </div>
+              <button onclick="excluirAppt('${escapeHtml(appt.id)}')" class="text-rose-600 font-bold cursor-pointer">✕ Liberar</button>
+            </div>
+          `;
+        }
+
+        const pac = db.pacientes.find(p => p.id === appt.pacienteId);
+        const isInativo = pac && pac.status === 'Inativo';
+        const acaoWap = isInativo
+          ? `<button onclick="toast('🚫 Paciente Inativo: agendamento e confirmação bloqueados.')" class="text-stone-400 font-bold cursor-pointer">🚫 Bloqueado (Inativo)</button>`
+          : `<button onclick="confirmarAgendamentoWhatsApp('${escapeHtml(appt.id)}')" class="text-sage-700 font-bold hover-underline cursor-pointer">💬 WhatsApp</button>`;
+
+        return `
+          <div class="flex items-center justify-between gap-2 p-4 rounded-2xl border border-alabaster-200 bg-alabaster-50 text-xs">
+            <div>
+              <strong>${h}</strong> &bull; ${escapeHtml(appt.nome)}
+              ${isInativo ? '<span class="px-2 py-0.5 rounded-full bg-rose-100 text-rose-700 font-extrabold text-10">Inativo</span>' : `<span class="text-emerald-700 font-bold">(${escapeHtml(appt.status)} • Ocupado)</span>`}
+            </div>
+            <div class="flex items-center gap-3">${acaoWap}<button onclick="excluirAppt('${escapeHtml(appt.id)}')" class="text-rose-600 font-bold cursor-pointer">✕</button></div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function mudarDataSelecionada(iso) { if (iso) { dataAtual = iso; renderAgenda(); } }
+    function irParaHoje() { dataAtual = hojeIso(); renderAgenda(); }
+
+    function abrirModalAgendamento(horaPadrao = null) {
+      const clientesAtivos = db.pacientes.filter(p => p.status !== 'Inativo');
+      if (clientesAtivos.length === 0) {
+        toast('⚠️ Não há clientes Ativos disponíveis para agendamento.');
+        return;
+      }
+
+      const horarios = gerarHorarios40Min(db.agendaConfig?.horaInicio || '09:00', db.agendaConfig?.horaFim || '17:00', 40);
+      const livres = horarios.filter(h => !horarioEstaOcupado(dataAtual, h));
+      if (livres.length === 0) {
+        toast('⚠️ Todos os horários deste dia já estão ocupados.');
+        return;
+      }
+
+      const escolhida = (horaPadrao && livres.includes(horaPadrao)) ? horaPadrao : livres[0];
+      const opcoesHoras = horarios.map(h => {
+        const ocupado = horarioEstaOcupado(dataAtual, h);
+        return `<option value="${h}" ${h === escolhida ? 'selected' : ''} ${ocupado ? 'disabled' : ''}>${h}${ocupado ? ' (Ocupado)' : ''}</option>`;
+      }).join('');
+
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">Novo Agendamento (Intervalo de 40 min)</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div><label class="block font-bold text-stone-600 mb-1">Paciente (somente Ativos)</label><select id="mod-pac" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white">${clientesAtivos.map(p=>`<option value="${escapeHtml(p.id)}">${escapeHtml(p.nome)}</option>`).join('')}</select></div>
+          <div class="grid grid-cols-2 gap-2">
+            <div><label class="block font-bold text-stone-600 mb-1">Data</label><input type="date" id="mod-data" value="${dataAtual}" onchange="atualizarHorariosModalAgendamento()" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            <div><label class="block font-bold text-stone-600 mb-1">Horário Livre</label><select id="mod-hora" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white">${opcoesHoras}</select></div>
+          </div>
+          <p class="text-11 text-sage-700 font-semibold m-0">${db.automacaoConfig?.autoAgendamentoAtivo ? '🤖 WhatsApp Automático ativo: ao salvar, o sistema prepara a mensagem e atualiza o histórico.' : '💬 WhatsApp Automático desligado: você pode confirmar manualmente na agenda.'}</p>
+          <div class="flex justify-end pt-2"><button onclick="salvarApptModal()" class="px-5 py-2 bg-sage-600 text-white rounded-xl font-bold cursor-pointer">Salvar</button></div>
+        </div>
+      `);
+    }
+
+    function atualizarHorariosModalAgendamento() {
+      const dt = document.getElementById('mod-data')?.value || dataAtual;
+      const selHora = document.getElementById('mod-hora');
+      if (!selHora) return;
+      const horarios = gerarHorarios40Min(db.agendaConfig?.horaInicio || '09:00', db.agendaConfig?.horaFim || '17:00', 40);
+      const primeiroLivre = horarios.find(h => !horarioEstaOcupado(dt, h)) || '';
+      selHora.innerHTML = horarios.map(h => {
+        const ocupado = horarioEstaOcupado(dt, h);
+        return `<option value="${h}" ${h === primeiroLivre ? 'selected' : ''} ${ocupado ? 'disabled' : ''}>${h}${ocupado ? ' (Ocupado)' : ''}</option>`;
+      }).join('');
+    }
+
+    function salvarApptModal() {
+      const pid = document.getElementById('mod-pac').value;
+      const dt = document.getElementById('mod-data').value;
+      const hr = document.getElementById('mod-hora').value;
+      const pac = db.pacientes.find(p => p.id === pid);
+
+      if (!pac || pac.status === 'Inativo') { toast('🚫 Agendamento bloqueado: cliente Inativo.'); return; }
+      if (!hr || horarioEstaOcupado(dt, hr)) { toast('⚠️ Horário já ocupado ou bloqueado.'); return; }
+
+      db.agenda.push({ id: Date.now().toString(), pacienteId: pid, nome: pac.nome, data: dt, hora: hr, status: 'Confirmada' });
+      const linkWap = processarAutomacaoAoAgendar(pac, dt, hr);
+      salvar('✅ Agendamento salvo e sincronizado!');
+      fecharModal();
+      renderAgenda();
+      if (linkWap) {
+        window.open(linkWap, '_blank', 'noopener,noreferrer');
+      }
+    }
+
+    function abrirModalBloqueioProfissional(horaPadrao = null) {
+      const horarios = gerarHorarios40Min(db.agendaConfig?.horaInicio || '09:00', db.agendaConfig?.horaFim || '17:00', 40);
+      const livres = horarios.filter(h => !horarioEstaOcupado(dataAtual, h));
+      if (livres.length === 0) { toast('⚠️ Não há horários livres nesta data.'); return; }
+
+      const escolhida = (horaPadrao && livres.includes(horaPadrao)) ? horaPadrao : livres[0];
+      const opcoesHoras = horarios.map(h => {
+        const ocupado = horarioEstaOcupado(dataAtual, h);
+        return `<option value="${h}" ${h === escolhida ? 'selected' : ''} ${ocupado ? 'disabled' : ''}>${h}${ocupado ? ' (Ocupado)' : ''}</option>`;
+      }).join('');
+
+      abrirModal(`
+        <div class="flex items-center justify-between pb-3 mb-4 border-b border-alabaster-200">
+          <h3 class="text-lg font-bold text-ink-800 m-0">🔒 Bloquear Horário Profissional</h3>
+          <button onclick="fecharModal()" class="text-stone-400 font-bold cursor-pointer">✕</button>
+        </div>
+        <div class="space-y-3 text-xs">
+          <div class="grid grid-cols-2 gap-2">
+            <div><label class="block font-bold text-stone-600 mb-1">Data</label><input type="date" id="bloq-data" value="${dataAtual}" onchange="atualizarHorariosModalBloqueio()" class="w-full p-2.5 rounded-xl border border-alabaster-200"></div>
+            <div><label class="block font-bold text-stone-600 mb-1">Horário (40 min)</label><select id="bloq-hora" class="w-full p-2.5 rounded-xl border border-alabaster-200 bg-white">${opcoesHoras}</select></div>
+          </div>
+          <div>
+            <label class="block font-bold text-stone-600 mb-1">Motivo (Médico / Assunto Particular)</label>
+            <input type="text" id="bloq-motivo" value="Consulta médica" class="w-full p-2.5 rounded-xl border border-alabaster-200">
+          </div>
+          <div class="flex justify-end gap-2 pt-2">
+            <button onclick="fecharModal()" class="px-4 py-2 bg-alabaster-100 rounded-xl font-bold cursor-pointer">Cancelar</button>
+            <button onclick="salvarBloqueioProfissional()" class="px-5 py-2 bg-champagne-500 text-white rounded-xl font-bold cursor-pointer">Bloquear Horário</button>
+          </div>
+        </div>
+      `);
+    }
+
+    function atualizarHorariosModalBloqueio() {
+      const dt = document.getElementById('bloq-data')?.value || dataAtual;
+      const selHora = document.getElementById('bloq-hora');
+      if (!selHora) return;
+      const horarios = gerarHorarios40Min(db.agendaConfig?.horaInicio || '09:00', db.agendaConfig?.horaFim || '17:00', 40);
+      const primeiroLivre = horarios.find(h => !horarioEstaOcupado(dt, h)) || '';
+      selHora.innerHTML = horarios.map(h => {
+        const ocupado = horarioEstaOcupado(dt, h);
+        return `<option value="${h}" ${h === primeiroLivre ? 'selected' : ''} ${ocupado ? 'disabled' : ''}>${h}${ocupado ? ' (Ocupado)' : ''}</option>`;
+      }).join('');
+    }
+
+    function salvarBloqueioProfissional() {
+      const dt = document.getElementById('bloq-data').value;
+      const hr = document.getElementById('bloq-hora').value;
+      const motivo = (document.getElementById('bloq-motivo')?.value || '').trim() || 'Assunto particular';
+      if (!hr || horarioEstaOcupado(dt, hr)) { toast('⚠️ Este horário já está ocupado ou bloqueado.'); return; }
+      db.agenda.push({ id: 'bloq_' + Date.now(), tipo: 'bloqueio_profissional', nome: motivo, motivo, data: dt, hora: hr, status: 'Bloqueado' });
+      salvar('🔒 Horário profissional bloqueado!');
+      fecharModal();
+      renderAgenda();
+    }
+
+    function excluirAppt(id) { db.agenda = db.agenda.filter(a => a.id !== id); salvar('🗑️ Horário liberado.'); renderAgenda(); }
+
+    function confirmarAgendamentoWhatsApp(id) {
+      const appt = db.agenda.find(a => a.id === id);
+      if (!appt || appt.tipo === 'bloqueio_profissional') return;
+      const pac = db.pacientes.find(p => p.id === appt.pacienteId);
+      if (pac && pac.status === 'Inativo') { toast('🚫 Agendamento bloqueado: o paciente está marcado como Inativo.'); return; }
+      const dataFmt = appt.data ? appt.data.split('-').reverse().join('/') : '';
+      const texto = formatarMensagemTemplate(db.automacaoConfig?.msgAgendamento, {
+        nome: appt.nome,
+        dataFmt,
+        hora: appt.hora,
+        profissional: 'Dra. Ana Paula Dias Sena',
+        servico: pac?.servicoNome || appt.mod || 'Atendimento'
+      });
+      const url = construirLinkWhatsApp(pac?.wap, texto);
+      if (!url) { toast('⚠️ Cadastre o número de WhatsApp do paciente antes de confirmar.'); return; }
+      window.open(url, '_blank', 'noopener,noreferrer');
+    }
+
+    function abrirModal(html) { document.getElementById('app-modal-box').innerHTML = html; document.getElementById('app-modal').classList.remove('hidden'); }
+    function fecharModal() { document.getElementById('app-modal').classList.add('hidden'); }
+
+    function registrarPwaOffline() {
+      const badge = document.getElementById('status-rede-badge');
+      const atualizarRede = () => {
+        if (!badge) return;
+        if (navigator.onLine) {
+          badge.textContent = '● Online + Cache Local';
+          badge.className = 'px-3 py-1 rounded-full bg-sage-50 text-sage-700 border border-sage-200 text-11 font-bold';
+        } else {
+          badge.textContent = '● Modo Offline Ativo';
+          badge.className = 'px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-11 font-bold';
+        }
+      };
+      window.addEventListener('online', atualizarRede);
+      window.addEventListener('offline', atualizarRede);
+      atualizarRede();
+
+      if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
+        const swCode = `
+          const CACHE = 'anasena-app-v45';
+          self.addEventListener('install', e => {
+            e.waitUntil(caches.open(CACHE).then(c => c.addAll(['./'])).catch(() => {}));
+            self.skipWaiting();
+          });
+          self.addEventListener('fetch', e => {
+            if (e.request.method !== 'GET') return;
+            e.respondWith(caches.match(e.request).then(r => r || fetch(e.request).catch(() => caches.match('./'))));
+          });
+        `;
+        const blob = new Blob([swCode], { type: 'application/javascript' });
+        const swUrl = URL.createObjectURL(blob);
+        navigator.serviceWorker.register(swUrl).catch(() => {});
+      }
+    }
+
+    window.onload = function() {
+      aplicarLogoNasImagens();
+      registrarPwaOffline();
+      mudarAba('dashboard');
+    };
+  </script>
 </body>
 </html>
