@@ -2544,13 +2544,15 @@
       const pac = db.pacientes.find(p => p.id === appt.pacienteId);
       if (pac && pac.status === 'Inativo') { toast('🚫 Agendamento bloqueado: o paciente está marcado como Inativo.'); return; }
       const dataFmt = appt.data ? appt.data.split('-').reverse().join('/') : '';
-      const texto = formatarMensagemTemplate(db.automacaoConfig?.msgAgendamento, {
-        nome: appt.nome,
-        dataFmt,
-        hora: appt.hora,
-       'Dra. Ana Paula',
-        servico:pac?. || appt.mod || 'Atendimento'
-      });
+     const texto = formatarMensagemTemplate(
+  db.automacaoConfig?.msgAgendamento || 'Olá cliente! passando para confirmar seu atendimento com a Dr. Ana no dia e hora.',
+  {
+    nome: 'cliente',
+    dataFmt: '',
+    hora: '',
+    profissional: 'Dr. Ana',
+    servico: ''
+  });
       const aviso18h = 'Por gentileza, confirme sua consulta com pelo menos 18 horas de antecedência.';
 const textoFinal = texto.includes('18 horas') ? texto : `${texto}\n\n${aviso18h}`;
       const url = construirLinkWhatsApp(pac?.wap, textoFinal);
