@@ -2472,7 +2472,7 @@
 
       db.agenda.push({ id: Date.now().toString(), pacienteId: pid, nome: pac.nome, data: dt, hora: hr, status: 'Confirmada' });
       const linkWap = processarAutomacaoAoAgendar(pac, dt, hr);
-      salvar('✅ Agendamento salvo e sincronizado!');
+          salvar('✅ Agendamento salvo e sincronizado!');
       fecharModal();
       renderAgenda();
       if (linkWap) {
@@ -2551,7 +2551,9 @@
         profissional: 'Dra. Ana Paula Dias Sena',
         servico: pac?.servicoNome || appt.mod || 'Atendimento'
       });
-      const url = construirLinkWhatsApp(pac?.wap, texto);
+      const aviso18h = 'Por gentileza, confirme sua consulta com pelo menos 18 horas de antecedência.';
+const textoFinal = texto.includes('18 horas') ? texto : `${texto}\n\n${aviso18h}`;
+      const url = construirLinkWhatsApp(pac?.wap, textoFinal);
       if (!url) { toast('⚠️ Cadastre o número de WhatsApp do paciente antes de confirmar.'); return; }
       window.open(url, '_blank', 'noopener,noreferrer');
     }
