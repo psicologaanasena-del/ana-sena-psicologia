@@ -2698,6 +2698,82 @@ const textoFinal = texto.includes('18 horas') ? texto : `${texto}\n\n${aviso18h}
       registrarPwaOffline();
       mudarAba('dashboard');
     };
-  </script>
+  </script>(function ativarSincronizacaoAppsScript() {
+  const URL_SYNC = 'https://script.google.com/macros/s/AKfycbz8k7iyzsgtjQCsBQHwfND5HvEY7rUX471tsuYrJHe20-5EN9LpVnwnOcIeKvPZ8fTI/exec';
+  const CHAVE_SYNC_LOCAL = 'ana_sena_psicologia_ultimo_sync_v1';
+  let timerEnvio = null;
+
+  async function enviarParaNuvem() {
+    if (!URL_SYNC || URL_SYNC.startsWith('COLE_AQUI') || !navigator.onLine) return;
+    if (typeof db === 'undefined') return;
+
+    const payload = {
+      atualizadoEm: new Date().toISOString(),
+      db: db
+    };
+
+    try {
+      await fetch(URL_SYNC, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify(payload)
+      });
+      localStorage.setItem(CHAVE_SYNC_LOCAL, payload.atualizadoEm);
+    } catch (e) {
+      // Mantém dados locais intactos caso a rede oscile
+    }
+  }
+
+  window.baixarDaNuvemAgora = async function (forcarAplicacao = false) {
+    if (!URL_SYNC || URL_SYNC.startsWith('COLE_AQUI') || !navigator.onLine) return;
+    if (typeof db === 'undefined') return;
+
+    try {
+      const resp = await fetch(URL_SYNC + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!resp.ok) return;
+      const remoto = await resp.json();
+      if (!remoto || !remoto.db || !remoto.atualizadoEm) return;
+
+      const ultimoLocal = localStorage.getItem(CHAVE_SYNC_LOCAL) || '';
+      if (forcarAplicacao || remoto.atualizadoEm > ultimoLocal) {
+        Object.assign(db, remoto.db);
+        if (typeof window.salvar === 'function') {
+          window.salvar();
+        }
+        localStorage.setItem(CHAVE_SYNC_LOCAL, remoto.atualizadoEm);
+      }
+    } catch (e) {
+      // Falha silenciosa para não interromper o uso offline
+    }
+  };
+
+  function agendarEnvioNuvem() {
+    clearTimeout(timerEnvio);
+    timerEnvio = setTimeout(enviarParaNuvem, 2500);
+  }
+
+  if (typeof window.salvar === 'function' && !window.salvar.__envoltaSyncNuvem) {
+    const salvarBase = window.salvar;
+    window.salvar = function (...args) {
+      const res = salvarBase.apply(this, args);
+      agendarEnvioNuvem();
+      return res;
+    };
+    window.salvar.__envoltaSyncNuvem = true;
+  }
+
+  window.addEventListener('load', () => {
+    setTimeout(() => window.baixarDaNuvemAgora(false), 1200);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      window.baixarDaNuvemAgora(false);
+    } else {
+      enviarParaNuvem();
+    }
+  });
+})();
 </body>
 </html>
